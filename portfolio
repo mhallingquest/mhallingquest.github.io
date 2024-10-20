@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milele Hallingquest - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .section-title {
+            color: #555;
+            margin-top: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Student Assignment Submission and Performance Report</h1>
+    <img src="instructorsummaryreport.jpg" alt="Student Performance Report" >
+    <h2>Description</h2>
+    <p>This report provides an analysis of student performance and assignment submissions across different courses and sections. 
+       It includes the number of students missing 2 or more assignments, their average percentage scores, and the total number of 
+       non-submissions. </p>
+    <h2>SQL, Excel </h2>
+   
+
+   
+
+</body>
+</html>
