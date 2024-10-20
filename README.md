@@ -1,1 +1,1 @@
-You can view my resume
+My resume
