@@ -28,7 +28,7 @@
 <body>
 
     <h1>Manufacturer Analysis Report</h1>
-        src="https://app.powerbi.com/view?r=eyJrIjoiN2ZlNGIyNDctOWRhNS00OGNkLTllM2ItZTVhMGJmY2Q2NDRmIiwidCI6IjQyNmVjMmY0LTM5YTgtNGE2ZS1iZmI5LTRlMDE5OGJkYTg2NyIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe title="ManufacturerAnalysisReport" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiN2ZlNGIyNDctOWRhNS00OGNkLTllM2ItZTVhMGJmY2Q2NDRmIiwidCI6IjQyNmVjMmY0LTM5YTgtNGE2ZS1iZmI5LTRlMDE5OGJkYTg2NyIsImMiOjF9&embedImagePlaceholder=true" frameborder="0" allowFullScreen="true"></iframe>
 
     <hr width="50%" color="gray" border: "1px" align="left"/>
    
