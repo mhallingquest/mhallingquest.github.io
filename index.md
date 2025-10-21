@@ -69,5 +69,5 @@
 If you’d like help scoping or building AI automations:
 
 
-- Email: [mhallin@hqconsultinginc.com](mailto:mhallin@hqconsultinginc.com)
+- Email: [mhallin@hqconsultinginc.com](mailto:milelehallingquest@gmail.com)
 - GitHub: [github.com/mhallingquest](https://github.com/mhallingquest)
