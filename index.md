@@ -1,9 +1,4 @@
 ---
-layout: single
-title: "AI Automation Engineer"
-author_profile: true
-classes: wide
----
 
 <div class="hero">
   <h1>AI Automation that Delivers ROI</h1>
