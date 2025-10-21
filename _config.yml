@@ -1,0 +1,56 @@
+# Site settings
+url: "mailto:milelehallingquest@gmail.com"
+
+
+# Defaults
+defaults:
+- scope:
+path: ""
+type: posts
+values:
+layout: single
+author_profile: true
+read_time: true
+share: true
+- scope:
+path: ""
+type: pages
+values:
+layout: single
+author_profile: true
+classes: wide
+
+
+# Navigation (header)
+nav:
+- title: "Projects"
+url: /projects/
+- title: "Automation"
+url: /automation/
+- title: "Blog"
+url: /blog/
+- title: "Contact"
+url: mailto:milelehallingquest@gmail.com
+
+
+# Collections (optional for case studies)
+collections:
+case_studies:
+output: true
+permalink: /case-studies/:path/
+
+
+# Google Analytics / Plausible (optional)
+#analytics:
+# provider: plausible
+# plausible:
+# domain: mhallingquest.github.io
+
+
+# Social image
+# og_image: /assets/img/social.jpg
+
+
+# Exclusions
+exclude:
+- README.md
