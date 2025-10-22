@@ -14,7 +14,8 @@ This bot automatically analyzes incoming contracts from Gmail attachments, extra
 - Real-time Slack alerts for risky clauses  
 - Seamless Google Drive + Sheets tracking
   
-<details><summary><strong>Advanced Contract Processing Workflow (Zapier + OpenAI)</strong></summary>
+<details>
+<summary><strong>Advanced Contract Processing Workflow (Zapier + OpenAI)</strong></summary>
 
 ```mermaid
 flowchart TD
@@ -52,10 +53,9 @@ flowchart TD
   E1 --> H1
   F2 --> H1
 
- </details>
+</details>
 
 **Workflow Steps**
-
 1. **Trigger:** Gmail — new attachment containing “contract”
 2. **Notify:** Send immediate Slack notification (intake)
 3. **Filter:** Only process contract files (skip & log others)
