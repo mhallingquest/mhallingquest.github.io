@@ -1,3 +1,6 @@
+<details>
+<summary><strong>Advanced Contract Processing Workflow (Zapier + OpenAI)</strong></summary>
+
 flowchart TD
   %% Intake
   A1["(1) Gmail Trigger: new attachment containing 'contract'"]
