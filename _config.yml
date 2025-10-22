@@ -4,8 +4,6 @@ bio: "AI Automation Engineer | Building intelligent workflows that save time & d
 url: "https://mhallingquest.github.io"   # your GitHub Pages URL
 location: "Remote/Atlanta"
 
-avatar: https://media.licdn.com/dms/image/v2/C4E03AQF7rAGoZl2B-A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516316698280?e=1762992000&v=beta&t=uYEQ9tTI-D4IJBPztKNK0jIIBeh2MuS8eaig00hluOo
-# Theme
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "dark"  # "default", "air", "contrast", "dark", "mint"
 
@@ -23,7 +21,7 @@ plugins:
 
 # Author
 author:
-  name: "Milele Hallin"
+  name: "Milele Hallingquest"
   avatar: "/assets/img/avatar.jpg"   # add an image or remove this line
   bio: "I build AI-powered automations that transform manual workflows into intelligent systems."
   location: "Remote / NYC"
