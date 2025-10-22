@@ -1,9 +1,38 @@
-<!-- Mermaid for GitHub Pages -->
+<!-- Mermaid for GitHub Pages (Minimal Mistakes) -->
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>
+document.addEventListener('DOMContentLoaded', function () {
+  // Initialize Mermaid (defer run until after we rewrite the blocks)
   mermaid.initialize({
-    startOnLoad: true,
+    startOnLoad: false,
     securityLevel: 'loose',
     flowchart: { htmlLabels: true, useMaxWidth: false, wrap: true }
   });
+
+  // Find fenced code blocks rendered by Rouge/Kramdown: pre>code.language-mermaid
+  const codeBlocks = document.querySelectorAll('pre code.language-mermaid');
+
+  codeBlocks.forEach((code) => {
+    const pre = code.closest('pre');               // the <pre> wrapper
+    const container = pre ? pre.parentElement : code.parentElement; // may be .highlighter-rouge
+    const src = code.textContent;                  // mermaid source from the code fence
+
+    // Create a real Mermaid container
+    const div = document.createElement('div');
+    div.className = 'mermaid';
+    div.innerHTML = src;
+
+    // Replace the whole code block with the Mermaid container
+    if (container && container.classList.contains('highlighter-rouge')) {
+      container.replaceWith(div);
+    } else if (pre) {
+      pre.replaceWith(div);
+    } else {
+      code.replaceWith(div);
+    }
+  });
+
+  // Now render all .mermaid blocks
+  mermaid.run({ querySelector: '.mermaid' });
+});
 </script>
