@@ -1,2 +1,4 @@
+<details> <summary><strong>Test Diagram</strong></summary>
 flowchart TD
-  A[Start] --> B[It works]
+  A[Start] --> B[Inside details]
+</details>
