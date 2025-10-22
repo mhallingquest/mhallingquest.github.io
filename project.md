@@ -1,5 +1,5 @@
-⚙️ Contract Processing Bot
-Automates contract analysis and routing using Zapier and OpenAI.
+###⚙️ Contract Processing Bot
+<p>Automates contract analysis and routing using Zapier and OpenAI.</p>
 <details> <summary><strong>Advanced Contract Processing Workflow (Zapier + OpenAI)</strong></summary>
 flowchart LR
   %% Intake
