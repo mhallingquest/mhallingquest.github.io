@@ -1,6 +1,6 @@
 <details>
 <summary><strong>Advanced Contract Processing Workflow (Zapier + OpenAI)</strong></summary>
-```mermaid
+
 flowchart LR
   %% Intake
   A1["(1) Gmail Trigger: new attachment containing 'contract'"]
