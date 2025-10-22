@@ -1,7 +1,6 @@
 ⚙️ Contract Processing Bot
-<details> <summary><strong>Advanced Contract Processing Workflow (Zapier + OpenAI)</strong></summary>
 Automates contract analysis and routing using Zapier and OpenAI.
-<details>
+<details> <summary><strong>Advanced Contract Processing Workflow (Zapier + OpenAI)</strong></summary>
 flowchart LR
   %% Intake
   A1["(1) Gmail Trigger: new attachment containing 'contract'"]
