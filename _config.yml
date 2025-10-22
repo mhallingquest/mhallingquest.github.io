@@ -21,7 +21,7 @@ plugins:
 
 # Author
 author:
-  name: "Milele Hallingquest"
+  title: "Milele Hallingquest"
   avatar: "/assets/img/avatar.png"   # add an image or remove this line
   bio: "I build AI-powered automations that transform manual workflows into intelligent systems."
   location: "Remote / NYC"
