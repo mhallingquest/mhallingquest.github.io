@@ -70,8 +70,9 @@ author_profile: true
 <div class="demo-frame">
   <iframe src="https://example.com" loading="lazy" title="AI Demo"></iframe>
 </div>
--->
+
 ---
+-->
 
 ## Get in Touch
 - Email: [mhallin@hqconsultinginc.com](mailto:mhallin@hqconsultinginc.com)  
