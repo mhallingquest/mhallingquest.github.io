@@ -1,3 +1,10 @@
+---
+layout: single
+title: "Projects"
+classes: wide
+---
+
+
 ###⚙️ Contract Processing Bot
 <p>Automates contract analysis and routing using Zapier and OpenAI.</p>
 ```mermaid
