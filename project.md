@@ -2,7 +2,7 @@
 **Type:** Document Intelligence  
 **Stack:** Zapier, OpenAI, Google Drive, Gmail  
 
-This Zap automatically analyzes incoming contracts from Gmail attachments, extracts key data (parties, dates, amounts, renewal terms), checks for missing or risky clauses using OpenAI, and routes them for review or auto-approval.
+This bot automatically analyzes incoming contracts from Gmail attachments, extracts key data (parties, dates, amounts, renewal terms), checks for missing or risky clauses using OpenAI, and routes them for review or auto-approval.
 
 **Highlights**
 - 90% reduction in contract triage time  
