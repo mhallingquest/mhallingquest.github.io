@@ -1,4 +1,9 @@
-### Contract Processing Bot
+# 🧠 AI Automation Projects
+A collection of my automation builds that combine **Zapier**, **OpenAI**, and **custom logic** to eliminate manual effort and improve decision accuracy.
+
+---
+
+## ⚙️ Contract Processing Bot
 **Type:** Document Intelligence  
 **Stack:** Zapier, OpenAI, Google Drive, Gmail  
 
