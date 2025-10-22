@@ -23,14 +23,11 @@ This bot automates contract intake and review—extracting key clauses, identify
 
 ### 🧩 Workflow Diagram
 
-<details>
-<summary><strong>Advanced Contract Processing Workflow (Zapier + OpenAI)</strong></summary>
+### ⚙️ Contract Processing Bot — Diagram (no details wrapper)
 
 ```mermaid
 %%{init: {'flowchart': { 'htmlLabels': true, 'wrap': true, 'nodeSpacing': 60, 'rankSpacing': 80 }}}%%
 flowchart LR
-
-  %% === Intake ===
   subgraph Intake [📥 Intake]
     A1["(1) Gmail Trigger<br/>new attachment 'contract'"]
     A2["(2) Slack<br/>intake notification"]
@@ -38,11 +35,9 @@ flowchart LR
     A1 --> A2 --> A3
   end
 
-  %% === Storage ===
   A3 -- Yes --> A4["(4) Save to Drive<br/>/Contracts/Incoming"]
   A3 -- No  --> R1["Skip + log<br/>in Sheets"] --> H1([End])
 
-  %% === AI Extraction + Validation ===
   subgraph AI_Validation [🧠 AI Extraction + Validation]
     B1["(5) OpenAI<br/>extract JSON summary"]
     B2{"Schema-valid<br/>JSON?"}
@@ -54,7 +49,6 @@ flowchart LR
   A4 --> B1
   C1 --> D1["(7) Sheets<br/>append run log"]
 
-  %% === Routing & Actions ===
   subgraph Routing [📊 Routing & Actions]
     D1 --> D2{"(8) Risks<br/>detected?"}
     D2 -- Yes --> E1["Slack<br/>review thread"]
@@ -64,8 +58,7 @@ flowchart LR
 
   E1 --> H1
   F2 --> H1
-  
-</details> ```
+
 
 **Workflow Steps**
 
