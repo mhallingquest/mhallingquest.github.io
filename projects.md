@@ -19,7 +19,9 @@ This bot automates contract intake and review—extracting key clauses, identify
 **Highlights**
 - 80–90% reduction in contract triage time  
 - Real-time Slack alerts for risky clauses  
-- Seamless Google Drive + Sheets tracking  
+- Seamless Google Drive + Sheets tracking
+
+<details>
 
 ### 🧩 Workflow Diagram
 
@@ -59,7 +61,7 @@ flowchart LR
   E1 --> H1
   F2 --> H1
 
-```
+</details>```
 
 **Workflow Steps**
 
