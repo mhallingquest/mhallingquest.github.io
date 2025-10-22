@@ -22,16 +22,16 @@ plugins:
 # Author
 author:
   name: "Milele Hallingquest"
-  avatar: "/assets/img/avatar.jpg"   # add an image or remove this line
+  avatar: "/assets/img/avatar.png"   # add an image or remove this line
   bio: "I build AI-powered automations that transform manual workflows into intelligent systems."
   location: "Remote / NYC"
   links:
     - label: "GitHub"
       icon: "fab fa-github"
-      url: "https://github.com/mhallingquest"
+      url: "https://mhallingquest.github.io/"
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
-      url: "https://www.linkedin.com/in/"
+      url: "https://www.linkedin.com/in/milelehallingquest/"
     - label: "Email"
       icon: "fas fa-envelope"
       url: "mailto:milelehallingquest@gmail.com"
