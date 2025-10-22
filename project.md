@@ -1,46 +1,70 @@
 ---
 layout: single
 title: "Projects"
+permalink: /projects/
 classes: wide
 ---
 
+# 🧠 AI Automation Projects
+A collection of automation builds combining **Zapier**, **OpenAI**, and clean orchestration to remove manual work and improve accuracy.
 
-###⚙️ Contract Processing Bot
-<p>Automates contract analysis and routing using Zapier and OpenAI.</p>
+---
+
+## ⚙️ Contract Processing Bot
+**Type:** Document Intelligence  
+**Stack:** Zapier, OpenAI, Google Drive, Gmail, Slack, Google Sheets  
+
+This bot automates contract intake and review—extracting key clauses, identifying risks, logging results, and routing approvals.
+
+**Highlights**
+- 80–90% reduction in contract triage time  
+- Real-time Slack alerts for risky clauses  
+- Seamless Google Drive + Sheets tracking  
+
+### 🧩 Workflow Diagram
+
+<details>
+<summary><strong>Advanced Contract Processing Workflow (Zapier + OpenAI)</strong></summary>
+
 ```mermaid
-<details> <summary><strong>Advanced Contract Processing Workflow (Zapier + OpenAI)</strong></summary>
+%%{init: {'flowchart': { 'htmlLabels': true, 'wrap': true, 'nodeSpacing': 60, 'rankSpacing': 80 }}}%%
 flowchart LR
-  %% Intake
-  A1["(1) Gmail Trigger: new attachment containing 'contract'"]
-  A2["(2) Slack: immediate intake notification"]
-  A3{"(3) Filter: file is a contract?"}
-  A1 --> A2 --> A3
 
-  %% Storage
-  A3 -- Yes --> A4["(4) Save to Google Drive → /Contracts/Incoming"]
-  A3 -- No  --> R1["Stop + Log skip in Sheets"] --> H1[End]
+  %% === Intake ===
+  subgraph Intake [📥 Intake]
+    A1["(1) Gmail Trigger<br/>new attachment 'contract'"]
+    A2["(2) Slack<br/>intake notification"]
+    A3{"(3) Filter<br/>contract file?"}
+    A1 --> A2 --> A3
+  end
 
-  %% AI extraction + validation
-  B1["(5) OpenAI: extract JSON (parties, dates, amounts, renewal, risks)"]
-  B2{"Schema-valid JSON?"}
-  B1 --> B2
-  B2 -- No --> B1R["Retry with stricter instructions + examples"]
-  B1R --> B2
-  B2 -- Yes --> C1["(6) Code by Zapier: parse JSON → typed fields"]
+  %% === Storage ===
+  A3 -- Yes --> A4["(4) Save to Drive<br/>/Contracts/Incoming"]
+  A3 -- No  --> R1["Skip + log<br/>in Sheets"] --> H1([End])
 
-  %% Logging
+  %% === AI Extraction + Validation ===
+  subgraph AI_Validation [🧠 AI Extraction + Validation]
+    B1["(5) OpenAI<br/>extract JSON summary"]
+    B2{"Schema-valid<br/>JSON?"}
+    B1 --> B2
+    B2 -- No --> B1R["Retry<br/>stricter prompt"]
+    B2 -- Yes --> C1["(6) Code step<br/>parse JSON → fields"]
+  end
+
   A4 --> B1
-  C1 --> D1["(7) Google Sheets: append run log (inputs, outputs, file link)"]
+  C1 --> D1["(7) Sheets<br/>append run log"]
 
-  %% Routing
-  D1 --> D2{"(8) Risks detected or missing clauses?"}
-  D2 -- Yes --> E1["Slack: human review thread with summary + Drive link"]
-  D2 -- No  --> F1["Move file → /Contracts/Approved"]
-  F1 --> F2["(9) Gmail: confirmation email to requester"]
+  %% === Routing & Actions ===
+  subgraph Routing [📊 Routing & Actions]
+    D1 --> D2{"(8) Risks<br/>detected?"}
+    D2 -- Yes --> E1["Slack<br/>review thread"]
+    D2 -- No  --> F1["Move to<br/>/Contracts/Approved"]
+    F1 --> F2["(9) Gmail<br/>confirmation email"]
+  end
 
-  %% Terminate
   E1 --> H1
   F2 --> H1
+
   
 </details> ```
 
