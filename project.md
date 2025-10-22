@@ -54,15 +54,3 @@ flowchart TD
   F2 --> H1
 
 </details>
-
-**Workflow Steps**
-1. **Trigger:** Gmail — new attachment containing “contract”
-2. **Notify:** Send immediate Slack notification (intake)
-3. **Filter:** Only process contract files (skip & log others)
-4. **Store:** Upload to Google Drive → `/Contracts/Incoming`
-5. **Extract:** OpenAI step creates JSON summary (parties, dates, amounts, renewal, risks)
-6. **Parse:** Code by Zapier converts JSON to typed fields
-7. **Log:** Append all run details to Google Sheets
-8. **Route:** If risks found → Slack human review thread; else continue
-9. **Confirm:** Send email confirmations for auto-approved contracts
-
