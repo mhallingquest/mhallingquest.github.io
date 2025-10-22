@@ -1,6 +1,5 @@
 <details>
 <summary><strong>Advanced Contract Processing Workflow (Zapier + OpenAI)</strong></summary>
-
 ```mermaid
 flowchart LR
   %% === Intake ===
@@ -39,7 +38,6 @@ flowchart LR
   F2 --> H1
 </details>
 **Workflow Steps**
-
 1. **Trigger:** Gmail — new attachment containing “contract”
 2. **Notify:** Send immediate Slack notification (intake)
 3. **Filter:** Only process contract files (skip & log others)
