@@ -1,12 +1,10 @@
 # Site settings
-locale: "en-US"
-title: "Milele Hallingquest"
-name: "AI Automation"
-description: "AI Automation Engineer | Building intelligent workflows that save time & drive ROI"
+name: "Milele Hallingquest"
+bio: "AI Automation Engineer | Building intelligent workflows that save time & drive ROI"
 url: "https://mhallingquest.github.io"   # your GitHub Pages URL
-baseurl: ""                              # no trailing slash
-repository: "mhallingquest/mhallingquest.github.io"
+location: "Remote/Atlanta"
 
+avatar: https://media.licdn.com/dms/image/v2/C4E03AQF7rAGoZl2B-A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516316698280?e=1762992000&v=beta&t=uYEQ9tTI-D4IJBPztKNK0jIIBeh2MuS8eaig00hluOo
 # Theme
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "dark"  # "default", "air", "contrast", "dark", "mint"
