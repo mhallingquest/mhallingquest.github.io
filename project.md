@@ -1,3 +1,4 @@
+<details> <summary><strong>Advanced Contract Processing Workflow (Zapier + OpenAI)</strong></summary>
 flowchart TD
   %% Intake
   A1["(1) Gmail Trigger: new attachment containing 'contract'"]
@@ -30,7 +31,7 @@ flowchart TD
   %% Terminate
   E1 --> H1
   F2 --> H1
-</details?
+</details>
 **Workflow Steps**
 
 1. **Trigger:** Gmail — new attachment containing “contract”
