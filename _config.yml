@@ -34,7 +34,7 @@ author:
       url: "https://www.linkedin.com/in/milelehallingquest/"
     - label: "Email"
       icon: "fas fa-envelope"
-      url: "mailto:milelehallingquest@gmail.com"
+      url: "mailto:mhallin@hqconsultinginc.com"
 
 # Defaults
 defaults:
@@ -63,7 +63,7 @@ nav:
   - title: "Blog"
     url: "/blog/"
   - title: "Contact"
-    url: "mailto:milelehallingquest@gmail.com"
+    url: "mailto:mhallin@hqconsultinginc.com"
 
 # Collections (optional for case studies)
 collections:
