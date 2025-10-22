@@ -23,7 +23,7 @@ This bot automates contract intake and review—extracting key clauses, identify
 
 ### 🧩 Workflow Diagram
 
-### ⚙️ Contract Processing Bot — Diagram (no details wrapper)
+### ⚙️ Contract Processing Bot — Diagram
 
 ```mermaid
 %%{init: {'flowchart': { 'htmlLabels': true, 'wrap': true, 'nodeSpacing': 60, 'rankSpacing': 80 }}}%%
