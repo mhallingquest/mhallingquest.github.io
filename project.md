@@ -52,7 +52,7 @@ flowchart TD
   E1 --> H1
   F2 --> H1
 
- </details> ```
+ </details>
 
 **Workflow Steps**
 
