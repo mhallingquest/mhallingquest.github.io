@@ -21,9 +21,7 @@ This bot automates contract intake and review—extracting key clauses, identify
 - Real-time Slack alerts for risky clauses  
 - Seamless Google Drive + Sheets tracking
 
-<details>
-
-### 🧩 Workflow Diagram
+<details>### 🧩 Workflow Diagram
 
 ### ⚙️ Contract Processing Bot — Diagram
 
