@@ -1,5 +1,6 @@
 ###⚙️ Contract Processing Bot
 <p>Automates contract analysis and routing using Zapier and OpenAI.</p>
+```mermaid
 <details> <summary><strong>Advanced Contract Processing Workflow (Zapier + OpenAI)</strong></summary>
 flowchart LR
   %% Intake
@@ -33,7 +34,9 @@ flowchart LR
   %% Terminate
   E1 --> H1
   F2 --> H1
-</details>
+  
+</details> ```
+
 **Workflow Steps**
 
 1. **Trigger:** Gmail — new attachment containing “contract”
