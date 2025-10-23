@@ -9,7 +9,7 @@ classes: wide
 A collection of automation builds combining **Zapier**, **OpenAI**, and clean orchestration to remove manual work and improve accuracy.
 
 ---
-
+<details open>
 ## ⚙️ Contract Processing Bot
 **Type:** Document Intelligence  
 **Stack:** Zapier, OpenAI, Google Drive, Gmail, Slack, Google Sheets  
@@ -21,7 +21,7 @@ This bot automates contract intake and review—extracting key clauses, identify
 - Real-time Slack alerts for risky clauses  
 - Seamless Google Drive + Sheets tracking
 
-<details ### 🧩 Workflow Diagram>
+### 🧩 Workflow Diagram
 
 ### ⚙️ Contract Processing Bot — Diagram
 
@@ -72,4 +72,5 @@ flowchart LR
 7. **Log:** Append all run details to Google Sheets
 8. **Route:** If risks found → Slack human review thread; else continue
 9. **Confirm:** Send email confirmations for auto-approved contracts
+
 </details>
