@@ -16,13 +16,12 @@ A collection of automation builds combining **Zapier**, **OpenAI**, and clean or
 
 This bot automates contract intake and review—extracting key clauses, identifying risks, logging results, and routing approvals.
 
-<details>
 **Highlights**
 - 80–90% reduction in contract triage time  
 - Real-time Slack alerts for risky clauses  
 - Seamless Google Drive + Sheets tracking
 
-### 🧩 Workflow Diagram
+<details ### 🧩 Workflow Diagram>
 
 ### ⚙️ Contract Processing Bot — Diagram
 
