@@ -9,7 +9,9 @@ classes: wide
 A collection of automation builds combining **Zapier**, **OpenAI**, and clean orchestration to remove manual work and improve accuracy.
 
 ---
-<details open>
+
+<details>
+  
 ## ⚙️ Contract Processing Bot
 **Type:** Document Intelligence  
 **Stack:** Zapier, OpenAI, Google Drive, Gmail, Slack, Google Sheets  
