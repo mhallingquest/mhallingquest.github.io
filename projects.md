@@ -16,6 +16,7 @@ A collection of automation builds combining **Zapier**, **OpenAI**, and clean or
 
 This bot automates contract intake and review—extracting key clauses, identifying risks, logging results, and routing approvals.
 
+<details>
 **Highlights**
 - 80–90% reduction in contract triage time  
 - Real-time Slack alerts for risky clauses  
@@ -72,3 +73,4 @@ flowchart LR
 7. **Log:** Append all run details to Google Sheets
 8. **Route:** If risks found → Slack human review thread; else continue
 9. **Confirm:** Send email confirmations for auto-approved contracts
+</details>
