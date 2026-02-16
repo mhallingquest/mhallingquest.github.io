@@ -52,10 +52,6 @@ author_profile: true
     <h4>Contract Processing Bot</h4>
     <p>NLP extraction + policy checks + approval workflow.</p>
   </a>
-  <a class="project" href="/projects/#lead-enrichment-agent">
-    <h4>Lead Enrichment Agent</h4>
-    <p>Calls data APIs, dedupes, scores, and writes to CRM.</p>
-  </a>
   <a class="project" href="/projects/#voice-assistant">
     <h4>Voice Assistant for Ops</h4>
     <p>Whisper + actions: create tickets, draft emails, query docs.</p>
@@ -75,6 +71,6 @@ author_profile: true
 -->
 
 ## Get in Touch
-- Email: [mhallin@hqconsultinginc.com](mailto:mhallin@hqconsultinginc.com)  
-- GitHub: [github.com/mhallingquest](https://github.com/mhallingquest)
+##- Email: [mhallin@hqconsultinginc.com](mailto:mhallin@hqconsultinginc.com)  
+##- GitHub: [github.com/mhallingquest](https://github.com/mhallingquest)
 
