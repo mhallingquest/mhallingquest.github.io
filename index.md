@@ -1,76 +1,65 @@
 ---
 layout: single
-title: "AI Automation Engineer"
+title: AI Automation Engineer
 classes: wide
 author_profile: true
 ---
 
-<div class="hero">
-  <h1>AI Automation that Delivers ROI</h1>
-  <p>I design and ship intelligent workflows that reduce manual work, speed up decisions, and create leverage.</p>
-  <div class="cta-row">
-    <a class="btn" href="/projects/">View Projects</a>
-    <a class="btn ghost" href="/automation/">Automation in Action</a>
-  </div>
-</div>
+# AI Automation that Delivers ROI
+
+I design and ship intelligent workflows that reduce manual work, speed up decisions, and create leverage — across education, telecom, media, and banking.
+
+[View Projects](/projects/){: .btn .btn--primary}
+[About Me](/about/){: .btn .btn--inverse}
 
 ---
 
 ## What I Build
-<div class="cards">
-  <div class="card">
-    <h3>Document Intelligence</h3>
-    <p>LLM-powered extraction, validation, and routing for contracts, invoices, and forms.</p>
-    <div class="tags"><span>NLP</span><span>RAG</span><span>Validation</span></div>
-  </div>
-  <div class="card">
-    <h3>Agentic Workflows</h3>
-    <p>Multi-step agents that call tools/APIs to classify, summarize, draft and execute actions.</p>
-    <div class="tags"><span>Tools</span><span>Reasoning</span><span>Orchestration</span></div>
-  </div>
-  <div class="card">
-    <h3>Business Integrations</h3>
-    <p>Glue systems together with robust error handling and audit trails.</p>
-    <div class="tags"><span>Zapier/Make</span><span>Python</span><span>Webhook</span></div>
-  </div>
-</div>
+
+### Document Intelligence
+LLM-powered extraction, validation, and routing for contracts, invoices, and forms.
+
+`NLP` `RAG` `Validation`
+
+### Agentic Workflows
+Multi-step agents that call tools/APIs to classify, summarize, draft, and execute actions.
+
+`Tools` `Reasoning` `Orchestration`
+
+### Data Pipelines & Analytics
+End-to-end pipelines from raw data to production dashboards — SQL, Python, Power BI, Tableau.
+
+`SQL` `Python` `Power BI` `Tableau`
 
 ---
 
 ## Selected Results
-<ul class="results">
-  <li><strong>–80% time</strong> to process vendor contracts with validation loops</li>
-  <li><strong>+32% sales conversion</strong> after automated lead enrichment and scoring</li>
-  <li><strong>24/7 response</strong> to support emails with human-in-the-loop approvals</li>
-</ul>
+
+| Project | Result |
+|---------|--------|
+| [Contract Processing Bot](/projects/#contract-processing-bot) | **–80% time** to process vendor contracts with AI validation loops |
+| [Lead Enrichment Workflow](/projects/#lead-enrichment) | **+32% sales conversion** after automated scoring and routing |
+| [Support Email Agent](/projects/#support-email-agent) | **24/7 response** to support emails with human-in-the-loop approvals |
 
 ---
 
 ## Featured Projects
-<div class="project-grid">
-  <a class="project" href="/projects/#contract-processing-bot">
-    <h4>Contract Processing Bot</h4>
-    <p>NLP extraction + policy checks + approval workflow.</p>
-  </a>
-  <a class="project" href="/projects/#voice-assistant">
-    <h4>Voice Assistant for Ops</h4>
-    <p>Whisper + actions: create tickets, draft emails, query docs.</p>
-  </a>
-</div>
+
+### 🤖 [Contract Processing Bot](/projects/#contract-processing-bot)
+NLP extraction + policy checks + approval workflow. Built on Zapier + OpenAI + Google Drive.
+
+### 🎓 [ScholarDollarz](https://scholardollarz.com)
+AI-powered scholarship intelligence platform — 4,600+ scholarships, verified and searchable.
+`FastAPI` `MongoDB Atlas` `NVIDIA NIM` `Python`
+
+### 🏢 [HQ Data Services](https://hqdataservicesllc.com)
+AI automation consultancy with live demos: workflow simulator, real-time event stream monitor.
+`FastAPI` `JavaScript` `Render`
 
 ---
-<!-- This line is a comment and will not be rendered 
-## Try a Demo
-> Replace the src with your Streamlit/HF Space URL.
-
-<div class="demo-frame">
-  <iframe src="https://example.com" loading="lazy" title="AI Demo"></iframe>
-</div>
-
----
--->
 
 ## Get in Touch
-##- Email: [mhallin@hqconsultinginc.com](mailto:mhallin@hqconsultinginc.com)  
-##- GitHub: [github.com/mhallingquest](https://github.com/mhallingquest)
 
+- 📧 [milelehallingquest@mgmail.com](mailto:milelehallingquest@gmail.com)
+- 💼 [linkedin.com/in/milelehallingquest](https://www.linkedin.com/in/milelehallingquest/)
+- 🐙 [github.com/mhallingquest](https://github.com/mhallingquest)
