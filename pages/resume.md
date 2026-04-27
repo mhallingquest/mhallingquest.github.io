@@ -9,7 +9,7 @@ classes: wide
 ## Milele Hallingquest
 **AI Automation Engineer · Senior Data Analytics Professional · Founder**
 
-📍 Remote / Atlanta, GA · 📧 milelehallingquest@gmail.com · 💼 [LinkedIn](https://www.linkedin.com/in/milelehallingquest/) · 🐙 [GitHub](https://github.com/mhallingquest)
+📍 Remote / Atlanta, GA · 📧 mhallin@hqconsultinginc.com · 💼 [LinkedIn](https://www.linkedin.com/in/milelehallingquest/) · 🐙 [GitHub](https://github.com/mhallingquest)
 
 ---
 
