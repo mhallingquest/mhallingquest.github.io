@@ -1,0 +1,12 @@
+# _data/navigation.yml
+# Main navigation links shown in the top nav bar
+
+main:
+  - title: "Projects"
+    url: /projects/
+  - title: "Resume"
+    url: /resume/
+  - title: "HQ Data Services"
+    url: https://hqdataservicesllc.com
+  - title: "ScholarDollarz"
+    url: https://scholardollarz.com
