@@ -71,6 +71,10 @@ collections:
     output: true
     permalink: /case-studies/:path/
 
+#Include
+include:
+  - _pages
+
 # Exclusions
 exclude:
   - README.md
