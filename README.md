@@ -1,7 +1,8 @@
 <div align="center">
 
-# Milele Hallingquest
-### AI Automation Engineer · Data Scientist · Founder
+<div align="center">
+  <img src="./banner.png" alt="Milele Hallingquest - AI Automation Engineer" width="100%"/>
+</div>
 
 *Building intelligent systems that make education and opportunity more accessible*
 
