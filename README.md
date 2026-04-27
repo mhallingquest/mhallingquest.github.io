@@ -20,15 +20,14 @@
 
 ## 👋 About Me
 
-I'm a **data scientist and AI engineer** with 15+ years of experience turning complex data into intelligent, automated systems — across education, telecom, media, and banking.
-
-I'm also a founder. I built **[HQ Data Services](https://hqdataservicesllc.com)** to help organizations automate their data workflows with AI, and **[ScholarDollarz](https://scholardollarz.com)** to help students find scholarships they actually qualify for — because opportunity shouldn't be buried in a Google search.
-
+I'm a senior data analytics professional and AI engineer with 15+ years of experience turning complex data into intelligent, automated systems — across education, telecom, media, and banking. My work increasingly bridges analytics and AI engineering, with a clear trajectory toward data science.
+I'm also a founder. I built HQ Data Services to help organizations automate their data workflows with AI, and ScholarDollarz to help students find scholarships they actually qualify for — because opportunity shouldn't be buried in a Google search.
 My work sits at the intersection of:
-- **AI/ML pipelines** — LLM integration, structured data extraction, NVIDIA NIM
-- **Data engineering** — SQL, ETL, MongoDB, Python automation
-- **Full-stack deployment** — FastAPI, Railway, Render, Docker
-- **Business impact** — I build things that solve real problems
+
+AI/ML pipelines — LLM integration, structured data extraction, NVIDIA NIM
+Data engineering — SQL, ETL, MongoDB, Python automation
+Full-stack deployment — FastAPI, Railway, Render, Docker
+Business impact — I build things that solve real problems
 
 ---
 
