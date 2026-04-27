@@ -53,4 +53,4 @@ I'm actively exploring **senior data analyst and data analytics engineer roles**
 If that's you, I'd love to talk.
 
 [View My Resume](/resume/){: .btn .btn--primary}
-[Get in Touch](mailto:mhallin@hqconsultinginc.com){: .btn .btn--inverse}
+[Get in Touch](mailto:milelehallingquest@gmail.com){: .btn .btn--inverse}
