@@ -16,7 +16,7 @@
 
 ---
 
-<img align="right" src="./assets/img/0402.JPG" width="180" style="border-radius: 50%; margin-left: 20px;"/>
+<img align="right" src="./assets/img/profile.JPG" width="180" style="border-radius: 50%; margin-left: 20px;"/>
 
 ## 👋 About Me
 
