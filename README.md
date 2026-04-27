@@ -3,6 +3,7 @@
 <div align="center">
   <img src="./banner.png" alt="Milele Hallingquest - AI Automation Engineer" width="100%"/>
 </div>
+---
 
 *Building intelligent systems that make education and opportunity more accessible*
 
@@ -26,6 +27,13 @@ My work sits at the intersection of:
 - **Data engineering** — SQL, ETL, MongoDB, Python automation
 - **Full-stack deployment** — FastAPI, Railway, Render, Docker
 - **Business impact** — I build things that solve real problems
+
+---
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=mhallingquest&show_icons=true&theme=tokyonight&hide_border=true" height="165"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mhallingquest&layout=compact&theme=tokyonight&hide_border=true" height="165"/>
+</div>
 
 ---
 
