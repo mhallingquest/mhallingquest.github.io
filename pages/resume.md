@@ -80,5 +80,5 @@ AI scholarship intelligence platform serving students across the U.S.
 
 Senior Data Analyst or Data Analytics Engineer roles in **socially impactful industries** — education, healthcare, nonprofit, and public sector. Actively expanding into data science through AI engineering work.
 
-[Download Resume (PDF)](#){: .btn .btn--primary}
+[Download Resume (PDF)](/assets/milele-hallingquest-resume.pdf){: .btn .btn--primary}
 [Get in Touch](mailto:mhallin@hqconsultinginc.com){: .btn .btn--inverse}
