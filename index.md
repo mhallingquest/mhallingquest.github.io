@@ -7,7 +7,7 @@ author_profile: true
 
 # AI Automation that Delivers ROI
 
-I design and ship intelligent workflows that reduce manual work, speed up decisions, and create leverage — across education, telecom, media, and banking.
+I design and ship intelligent workflows that reduce manual work, speed up decisions, and create leverage across education, telecom, media, and banking.
 
 [View Projects](/projects/){: .btn .btn--primary}
 [About Me](/pages/about.md/){: .btn .btn--inverse}
