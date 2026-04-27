@@ -34,7 +34,7 @@ author:
       url: "https://www.linkedin.com/in/milelehallingquest/"
     - label: "Email"
       icon: "fas fa-envelope"
-      url: "mailto:milelehallingquest@gmail.com"
+      url: "mailto:mhallin@hqconsultinginc.com"
 
 # Defaults
 defaults:
@@ -58,12 +58,14 @@ defaults:
 nav:
   - title: "Projects"
     url: "/projects/"
-  - title: "Automation"
-    url: "/automation/"
-  - title: "Blog"
-    url: "/blog/"
-  - title: "Contact"
-    url: "mailto:milelehallingquest@gmail.com"
+  - title: "About"
+    url: "/about/"
+  - title: "Resume"
+    url: "/resume/"
+  - title: "HQ Data Services"
+    url: "https://hqdataservicesllc.com"
+  - title: "ScholarDollarz"
+    url: "https://scholardollarz.com"
 
 # Collections (optional for case studies)
 collections:
