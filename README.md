@@ -16,6 +16,8 @@
 
 ---
 
+<img align="right" src="./assets/img/NIL_0402.JPG" width="180" style="border-radius: 50%; margin-left: 20px;"/>
+
 ## 👋 About Me
 
 I'm a **data scientist and AI engineer** with 15+ years of experience turning complex data into intelligent, automated systems — across education, telecom, media, and banking.
