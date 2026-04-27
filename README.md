@@ -91,7 +91,7 @@ I gravitate toward industries where data work creates real social impact — exp
 
 - 🌐 [mhallingquest.github.io](https://mhallingquest.github.io)
 - 💼 [linkedin.com/in/milelehallingquest](https://www.linkedin.com/in/milelehallingquest/)
-- 📧 milelehallingquest@gmail.com
+- 📧 mhallin@hqconsultinginc.com
 
 ---
 
