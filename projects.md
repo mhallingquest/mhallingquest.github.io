@@ -10,7 +10,7 @@ A collection of automation builds combining **Zapier**, **OpenAI**, and clean or
 
 ---
 
-## ⚙️ Contract Processing Bot
+## ⚙️ Contract Processing Bot {#contract-processing-bot}
 **Type:** Document Intelligence  
 **Stack:** Zapier, OpenAI, Google Drive, Gmail, Slack, Google Sheets  
 
