@@ -38,8 +38,8 @@ End-to-end pipelines from raw data to production dashboards — SQL, Python, Pow
 | Project | Result |
 |---------|--------|
 | [Contract Processing Bot](/projects/#contract-processing-bot) | **–80% time** to process vendor contracts with AI validation loops |
-| [Meeting Intelligence Agent](/projects/#meeting-intelligence-action-item-agent) | **–85% time** spent on meeting write-up and follow-up |
 | [Support Email Agent](/projects/#support-email-agent) | **24/7 response** to support emails with human-in-the-loop approvals |
+| [Meeting Intelligence Agent](/projects/#meeting-intelligence-action-item-agent) | **–85% time** spent on meeting write-up and follow-up |
 
 ---
 
