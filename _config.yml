@@ -28,13 +28,13 @@ author:
   links:
     - label: "GitHub"
       icon: "fab fa-github"
-      url: "https://github.com/mhallingquest"
+      url: "https://mhallingquest.github.io"
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/milelehallingquest/"
     - label: "Email"
       icon: "fas fa-envelope"
-      url: "mailto:mhallin@hqconsultinginc.com"
+      url: "mailto:milelehallingquest@gmail.com"
 
 # Defaults
 defaults:
