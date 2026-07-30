@@ -193,4 +193,101 @@ flowchart LR
 8. **Notify:** Clean summary + action item list posted to the team's Slack channel
 9. **Track & digest:** Weekly cron checks the DB for items past due date and Slack-DMs each owner, with a rollup to the meeting organizer
     
+<div id="meeting-demo" style="border:1px solid #444; border-radius:10px; padding:1.25rem; margin:1.5rem 0; background:rgba(255,255,255,0.03);">
+  <p style="margin-top:0; font-weight:600;">🎬 Try it live</p>
+  <p style="font-size:0.9rem; opacity:0.85;">
+    Paste a meeting snippet (or use the example below) and this calls the
+    actual deployed FastAPI backend — not a canned response.
+  </p>
+  <textarea id="meeting-demo-input" rows="6" style="width:100%; box-sizing:border-box; font-family:inherit; padding:0.6rem; border-radius:6px; border:1px solid #555; background:rgba(0,0,0,0.2); color:inherit;">Sarah: We agreed to push the launch to October 15th. Sarah will update the marketing timeline by Friday. Mike, can you finalize the pricing page copy? Mike: Sure, I will have it done by next Wednesday. We still need to decide on the referral program structure.</textarea>
+  <div style="margin-top:0.75rem;">
+    <button id="meeting-demo-btn" style="padding:0.5rem 1.1rem; border-radius:6px; border:none; background:#4f7cff; color:white; cursor:pointer; font-weight:600;">
+      Run Live Demo
+    </button>
+    <span id="meeting-demo-status" style="margin-left:0.75rem; font-size:0.85rem; opacity:0.8;"></span>
+  </div>
+  <div id="meeting-demo-result" style="margin-top:1rem;"></div>
+</div>
 
+<script>
+(function () {
+  // Update this once your Railway deployment is live, e.g.:
+  // "https://meeting-intelligence-agent-production.up.railway.app"
+  const DEMO_API_URL = "https://meeting-intelligence-agentdemo-production.up.railway.app";
+
+  const btn = document.getElementById("meeting-demo-btn");
+  const input = document.getElementById("meeting-demo-input");
+  const status = document.getElementById("meeting-demo-status");
+  const resultBox = document.getElementById("meeting-demo-result");
+
+  function escapeHtml(str) {
+    const div = document.createElement("div");
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  function renderResult(data) {
+    const decisions = data.decisions.length
+      ? "<ul>" + data.decisions.map(d => `<li>${escapeHtml(d)}</li>`).join("") + "</ul>"
+      : "<p style='opacity:0.7;'>None recorded</p>";
+
+    const actionItems = data.action_items.length
+      ? "<ul>" + data.action_items.map(ai =>
+          `<li><strong>${escapeHtml(ai.task)}</strong> — <em>${escapeHtml(ai.owner)}</em>` +
+          (ai.due_date ? ` (due ${ai.due_date})` : "") + "</li>"
+        ).join("") + "</ul>"
+      : "<p style='opacity:0.7;'>None identified</p>";
+
+    const openQuestions = data.open_questions.length
+      ? "<ul>" + data.open_questions.map(q => `<li>${escapeHtml(q)}</li>`).join("") + "</ul>"
+      : "<p style='opacity:0.7;'>None</p>";
+
+    resultBox.innerHTML = `
+      <div style="border-top:1px solid #444; padding-top:0.75rem;">
+        <p><strong>Summary</strong><br>${escapeHtml(data.summary)}</p>
+        <p><strong>Decisions</strong></p>${decisions}
+        <p><strong>Action Items</strong></p>${actionItems}
+        <p><strong>Open Questions</strong></p>${openQuestions}
+      </div>
+    `;
+  }
+
+  btn.addEventListener("click", async function () {
+    const transcript = input.value.trim();
+    if (!transcript) {
+      status.textContent = "Paste a transcript first.";
+      return;
+    }
+
+    btn.disabled = true;
+    status.textContent = "Calling the live backend…";
+    resultBox.innerHTML = "";
+
+    try {
+      const resp = await fetch(DEMO_API_URL + "/demo/extract", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ transcript: transcript }),
+      });
+
+      if (resp.status === 429) {
+        status.textContent = "Demo rate limit reached — try again in a bit.";
+        return;
+      }
+      if (!resp.ok) {
+        const err = await resp.json().catch(() => ({}));
+        status.textContent = "Error: " + (err.detail || resp.statusText);
+        return;
+      }
+
+      const data = await resp.json();
+      status.textContent = "Done.";
+      renderResult(data);
+    } catch (e) {
+      status.textContent = "Could not reach the backend. It may be waking up from sleep — try again in a few seconds.";
+    } finally {
+      btn.disabled = false;
+    }
+  });
+})();
+</script>
