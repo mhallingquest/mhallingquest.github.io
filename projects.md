@@ -79,6 +79,11 @@ flowchart LR
     Paste contract text (or use the example below) and this calls the
     actual deployed FastAPI backend — not a canned response.
   </p>
+    <p style="font-size:0.8rem; opacity:0.75; border-left:3px solid #ff9800; padding:0.4rem 0.7rem; background:rgba(255,152,0,0.08); border-radius:0 4px 4px 0; margin:0.75rem 0;">
+    ⚠️ <strong>Not legal advice.</strong> This is a demo of an AI document-scanning
+    tool, not a substitute for review by a licensed attorney. Do not rely on
+    its output for real contract decisions.
+  </p>
   <textarea id="contract-demo-input" rows="8" style="width:100%; box-sizing:border-box; font-family:inherit; padding:0.6rem; border-radius:6px; border:1px solid #555; background:rgba(0,0,0,0.2); color:inherit;">This Software Subscription Agreement ("Agreement") is entered into as of January 1, 2026 by and between Acme Corp ("Client") and Beta LLC ("Provider"). Provider shall provide access to its software platform for a monthly fee of $2,500, payable on the 1st of each month. A late payment fee of $150 applies to payments received more than 5 days after the due date. This Agreement shall commence on the Effective Date and continue until December 31, 2026, and shall automatically renew for successive 12-month terms unless either party provides written notice of non-renewal at least 30 days prior to the end of the then-current term. Provider's total liability under this Agreement shall not exceed the fees paid by Client in the month immediately preceding the claim.</textarea>
   <div style="margin-top:0.75rem;">
     <button id="contract-demo-btn" style="padding:0.5rem 1.1rem; border-radius:6px; border:none; background:#4f7cff; color:white; cursor:pointer; font-weight:600;">
