@@ -73,6 +73,115 @@ flowchart LR
 8. **Route:** If risks found → Slack human review thread; else continue
 9. **Confirm:** Send email confirmations for auto-approved contracts
 
+<div id="contract-demo" style="border:1px solid #444; border-radius:10px; padding:1.25rem; margin:1.5rem 0; background:rgba(255,255,255,0.03);">
+  <p style="margin-top:0; font-weight:600;">🎬 Try it live</p>
+  <p style="font-size:0.9rem; opacity:0.85;">
+    Paste contract text (or use the example below) and this calls the
+    actual deployed FastAPI backend — not a canned response.
+  </p>
+  <textarea id="contract-demo-input" rows="8" style="width:100%; box-sizing:border-box; font-family:inherit; padding:0.6rem; border-radius:6px; border:1px solid #555; background:rgba(0,0,0,0.2); color:inherit;">This Software Subscription Agreement ("Agreement") is entered into as of January 1, 2026 by and between Acme Corp ("Client") and Beta LLC ("Provider"). Provider shall provide access to its software platform for a monthly fee of $2,500, payable on the 1st of each month. A late payment fee of $150 applies to payments received more than 5 days after the due date. This Agreement shall commence on the Effective Date and continue until December 31, 2026, and shall automatically renew for successive 12-month terms unless either party provides written notice of non-renewal at least 30 days prior to the end of the then-current term. Provider's total liability under this Agreement shall not exceed the fees paid by Client in the month immediately preceding the claim.</textarea>
+  <div style="margin-top:0.75rem;">
+    <button id="contract-demo-btn" style="padding:0.5rem 1.1rem; border-radius:6px; border:none; background:#4f7cff; color:white; cursor:pointer; font-weight:600;">
+      Run Live Demo
+    </button>
+    <span id="contract-demo-status" style="margin-left:0.75rem; font-size:0.85rem; opacity:0.8;"></span>
+  </div>
+  <div id="contract-demo-result" style="margin-top:1rem;"></div>
+</div>
+
+<script>
+(function () {
+  // Update this once your Contract Processing Bot Railway deployment is
+  // live — this is a separate service from the Meeting Intelligence Agent.
+  const DEMO_API_URL = "https://contract-processing-bot-production.up.railway.app";
+
+  const btn = document.getElementById("contract-demo-btn");
+  const input = document.getElementById("contract-demo-input");
+  const status = document.getElementById("contract-demo-status");
+  const resultBox = document.getElementById("contract-demo-result");
+
+  function escapeHtml(str) {
+    const div = document.createElement("div");
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  const severityColor = { low: "#4caf50", medium: "#ff9800", high: "#f44336" };
+
+  function renderResult(data) {
+    const parties = data.parties.length
+      ? data.parties.map(escapeHtml).join(", ")
+      : "<span style='opacity:0.7;'>None identified</span>";
+
+    const keyDates = data.key_dates.length
+      ? "<ul>" + data.key_dates.map(kd =>
+          `<li><strong>${escapeHtml(kd.label)}</strong>: ${kd.date ? escapeHtml(kd.date) : "<span style='opacity:0.7;'>not stated</span>"}</li>`
+        ).join("") + "</ul>"
+      : "<p style='opacity:0.7;'>None identified</p>";
+
+    const amounts = data.amounts.length
+      ? "<ul>" + data.amounts.map(a => `<li>${escapeHtml(a)}</li>`).join("") + "</ul>"
+      : "<p style='opacity:0.7;'>None identified</p>";
+
+    const riskFlags = data.risk_flags.length
+      ? "<ul>" + data.risk_flags.map(rf =>
+          `<li><strong style="color:${severityColor[rf.severity] || '#999'}">[${rf.severity.toUpperCase()}]</strong> ` +
+          `<strong>${escapeHtml(rf.clause)}</strong> — ${escapeHtml(rf.risk)}</li>`
+        ).join("") + "</ul>"
+      : "<p style='opacity:0.7;'>None flagged</p>";
+
+    resultBox.innerHTML = `
+      <div style="border-top:1px solid #444; padding-top:0.75rem;">
+        <p><strong>Summary</strong><br>${escapeHtml(data.summary)}</p>
+        <p><strong>Parties</strong><br>${parties}</p>
+        <p><strong>Key Dates</strong></p>${keyDates}
+        <p><strong>Amounts</strong></p>${amounts}
+        <p><strong>Renewal Terms</strong><br>${data.renewal_terms ? escapeHtml(data.renewal_terms) : "<span style='opacity:0.7;'>Not specified</span>"}</p>
+        <p><strong>Risk Flags</strong></p>${riskFlags}
+      </div>
+    `;
+  }
+
+  btn.addEventListener("click", async function () {
+    const contractText = input.value.trim();
+    if (!contractText) {
+      status.textContent = "Paste contract text first.";
+      return;
+    }
+
+    btn.disabled = true;
+    status.textContent = "Calling the live backend…";
+    resultBox.innerHTML = "";
+
+    try {
+      const resp = await fetch(DEMO_API_URL + "/demo/contract-extract", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ contract_text: contractText }),
+      });
+
+      if (resp.status === 429) {
+        status.textContent = "Demo rate limit reached — try again in a bit.";
+        return;
+      }
+      if (!resp.ok) {
+        const err = await resp.json().catch(() => ({}));
+        status.textContent = "Error: " + (err.detail || resp.statusText);
+        return;
+      }
+
+      const data = await resp.json();
+      status.textContent = "Done.";
+      renderResult(data);
+    } catch (e) {
+      status.textContent = "Could not reach the backend. It may be waking up from sleep — try again in a few seconds.";
+    } finally {
+      btn.disabled = false;
+    }
+  });
+})();
+</script>
+
 ---
 
 ## 📧 Support Email Agent {#support-email-agent}
