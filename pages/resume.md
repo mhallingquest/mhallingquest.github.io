@@ -65,8 +65,8 @@ AI scholarship intelligence platform serving students across the U.S.
 | [ScholarDollarz](/projects/scholardollarz/) | FastAPI, MongoDB, NVIDIA NIM | 4,600+ scholarships, AI-verified |
 | [HQ Data Services](/projects/hq-data-services/) | FastAPI, JS, Render | Live AI demo platform |
 | [Contract Processing Bot](/projects/#contract-processing-bot) | Zapier, OpenAI, Google Drive | –80% contract triage time |
-| [Voice Assistant for Ops](/projects/voice-assistant/) | Whisper, OpenAI, Python | Hands-free ops automation |
-| [Lead Enrichment Workflow](/projects/#lead-enrichment) | Python, APIs | +32% sales conversion |
+| [Support Email Agent](/projects/#support-email-agent) | Zapier, OpenAI, Gmail, Slack, Google Sheets |  24/7 automatic support |
+| [Meeting Intelligence Agent](/projects/#meeting-intelligence-agent) | FastAPI, OpenAI, Whisper, MongoDB |–85% meeting follow-up |
 
 ---
 
