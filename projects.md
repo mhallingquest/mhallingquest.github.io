@@ -75,7 +75,7 @@ flowchart LR
 
 ---
 
-## 📧 Support Email Agent
+## 📧 Support Email Agent {#support-email-agent}
 **Type:** Agentic Workflow  
 **Stack:** Zapier, OpenAI, Gmail, Zendesk, Slack, Google Sheets  
 
@@ -135,7 +135,7 @@ flowchart LR
 
 ---
 
-## 🗒️ Meeting Intelligence & Action-Item Agent
+## 🗒️ Meeting Intelligence & Action-Item Agent {#meeting-intelligence-agent}
 **Type:** Agentic Workflow + Document Intelligence  
 **Stack:** FastAPI, OpenAI (GPT-4o-mini), Whisper, MongoDB, Slack API, Notion/Asana API  
 

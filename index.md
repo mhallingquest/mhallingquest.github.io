@@ -38,8 +38,8 @@ End-to-end pipelines from raw data to production dashboards — SQL, Python, Pow
 | Project | Result |
 |---------|--------|
 | [Contract Processing Bot](/projects/#-contract-processing-bot) | **–80% time** to process vendor contracts with AI validation loops |
-| [Support Email Agent](/projects/#-support-email-agent) | **24/7 response** to support emails with human-in-the-loop approvals |
-| [Meeting Intelligence Agent](/projects/#-meeting-intelligence-action-item-agent) | **–85% time** spent on meeting write-up and follow-up |
+| [Support Email Agent](/projects/#support-email-agent) | **24/7 response** to support emails with human-in-the-loop approvals |
+| [Meeting Intelligence Agent](/projects/#meeting-intelligence-agent) | **–85% time** spent on meeting write-up and follow-up |
 
 ---
 
@@ -48,7 +48,7 @@ End-to-end pipelines from raw data to production dashboards — SQL, Python, Pow
 ### 🤖 [Contract Processing Bot](/projects/#contract-processing-bot)
 NLP extraction + policy checks + approval workflow. Built on Zapier + OpenAI + Google Drive.
 
-### 🗒️ [Meeting Intelligence Agent](/projects/#-meeting-intelligence-action-item-agent)
+### 🗒️ [Meeting Intelligence Agent](/projects/#meeting-intelligence-agent)
 Turns meeting recordings into structured minutes and auto-creates action items with owners and due dates.
 `FastAPI` `OpenAI` `Whisper` `MongoDB`
 
