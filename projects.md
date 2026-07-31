@@ -485,7 +485,7 @@ flowchart LR
     <iframe
       title="Medicare Provider & Procedure Dashboard"
       style="position:absolute; top:0; left:0; width:100%; height:100%;"
-      src="PASTE_YOUR_POWERBI_PUBLISH_TO_WEB_URL_HERE"
+      src="https://app.powerbi.com/view?r=eyJrIjoiNTU5ZTNhYmYtOGQ4ZC00ZjQ4LThlMjUtNzExYTQ0NjJiM2Q0IiwidCI6IjQyNmVjMmY0LTM5YTgtNGE2ZS1iZmI5LTRlMDE5OGJkYTg2NyIsImMiOjF9&pageName=2b86dd1570a591db1b05"
       frameborder="0"
       allowFullScreen="true">
     </iframe>
