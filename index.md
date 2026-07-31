@@ -64,7 +64,7 @@ AI automation consultancy with live demos: workflow simulator, real-time event s
 
 ## Get in Touch
 
-- 📧 [mhallin@hqconsultinginc.com](mailto:mhallin@hqconsultinginc.com)
+- 📧 [mhallin@hqconsultinginc.com](mailto:milelehallingquest@gmail.com)
 - 💼 [linkedin.com/in/milelehallingquest](https://www.linkedin.com/in/milelehallingquest/)
 
 
