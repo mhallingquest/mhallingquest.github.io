@@ -61,10 +61,6 @@ Raw CMS Medicare data landed in BigQuery, modeled with dbt, served through a liv
 AI-powered scholarship intelligence platform — 4,600+ scholarships, verified and searchable.
 `FastAPI` `MongoDB Atlas` `NVIDIA NIM` `Python`
 
-### 🏢 [HQ Data Services](https://hqdataservicesllc.com)
-AI automation consultancy with live demos: workflow simulator, real-time event stream monitor.
-`FastAPI` `JavaScript` `Render`
-
 ---
 
 ## Get in Touch
