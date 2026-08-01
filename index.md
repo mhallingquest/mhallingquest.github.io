@@ -40,6 +40,7 @@ End-to-end pipelines from raw data to production dashboards — SQL, Python, Pow
 | [Contract Processing Bot](/projects/#contract-processing-bot) | **–80% time** to process vendor contracts with AI validation loops |
 | [Support Email Agent](/projects/#support-email-agent) | **24/7 response** to support emails with human-in-the-loop approvals |
 | [Meeting Intelligence Agent](/projects/#meeting-intelligence-agent) | **–85% time** spent on meeting write-up and follow-up |
+| [Medicare Data Pipeline](/projects/#medicare-data-pipeline) | Raw CMS data → BigQuery → dbt → **live Power BI dashboard** |
 
 ---
 
@@ -51,6 +52,10 @@ NLP extraction + policy checks + approval workflow. Built on Zapier + OpenAI + G
 ### 🗒️ [Meeting Intelligence Agent](/projects/#meeting-intelligence-agent)
 Turns meeting recordings into structured minutes and auto-creates action items with owners and due dates.
 `FastAPI` `OpenAI` `Whisper` `MongoDB`
+
+### 📊 [Medicare Data Pipeline](/projects/#medicare-data-pipeline)
+Raw CMS Medicare data landed in BigQuery, modeled with dbt, served through a live Power BI dashboard.
+`BigQuery` `dbt` `Power BI` `Cloud Storage`
 
 ### 🎓 [ScholarDollarz](https://scholardollarz.com)
 AI-powered scholarship intelligence platform — 4,600+ scholarships, verified and searchable.
@@ -66,6 +71,3 @@ AI automation consultancy with live demos: workflow simulator, real-time event s
 
 - 📧 [milelehallingquest@gmail.com](mailto:milelehallingquest@gmail.com)
 - 💼 [linkedin.com/in/milelehallingquest](https://www.linkedin.com/in/milelehallingquest/)
-
-
-  
