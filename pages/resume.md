@@ -21,22 +21,13 @@ Senior data analytics professional and AI automation engineer with 15+ years of 
 
 ## Core Competencies
 
-`Python` `SQL` `FastAPI` `MongoDB` `NVIDIA NIM` `LLM Integration` `RAG` `Docker` `REST APIs`
+`Python` `SQL` `FastAPI` `MongoDB` `NVIDIA NIM` `LLM Integration` `Docker` `REST APIs`
 `Power BI` `Tableau` `Data Pipelines` `ETL` `Statistical Analysis` `Agentic Workflows`
-`Railway` `Render` `GitHub Actions` `Jekyll` `Streamlit`
+`Railway` `Render` `GitHub Actions` 
 
 ---
 
 ## Experience
-
-### Founder & CEO — HQ Data Services LLC
-*Present*
-
-AI-powered data and business process automation consultancy.
-
-- Design and deploy multi-step agentic workflows replacing manual data operations for clients
-- Build production pipelines from raw data intake through dashboard delivery
-- Developed hqdataservicesllc.com — a single-page application with five interactive live AI demos
 
 ### Founder & CEO — ScholarDollarz
 *Present*
@@ -63,10 +54,10 @@ AI scholarship intelligence platform serving students across the U.S.
 | Project | Stack | Outcome |
 |---------|-------|---------|
 | [ScholarDollarz](/projects/scholardollarz/) | FastAPI, MongoDB, NVIDIA NIM | 4,600+ scholarships, AI-verified |
-| [HQ Data Services](/projects/hq-data-services/) | FastAPI, JS, Render | Live AI demo platform |
 | [Contract Processing Bot](/projects/#contract-processing-bot) | Zapier, OpenAI, Google Drive | –80% contract triage time |
-| [Support Email Agent](/projects/#support-email-agent) | Zapier, OpenAI, Gmail, Slack, Google Sheets |  24/7 automatic support |
-| [Meeting Intelligence Agent](/projects/#meeting-intelligence-agent) | FastAPI, OpenAI, Whisper, MongoDB |–85% meeting follow-up |
+| [Support Email Agent](/projects/#support-email-agent) | Zapier, OpenAI, Gmail, Slack, Google Sheets | 24/7 automatic support |
+| [Meeting Intelligence Agent](/projects/#meeting-intelligence-agent) | FastAPI, OpenAI, Whisper, MongoDB | –85% meeting follow-up |
+| [Medicare Data Pipeline](/projects/#medicare-data-pipeline) | Google Cloud Storage, BigQuery, dbt, PowerBI | live Power BI dashboard |
 
 ---
 
