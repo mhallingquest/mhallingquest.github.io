@@ -20,8 +20,6 @@ A few years ago I started asking a harder question: what if the organizations do
 
 That question led me to found two businesses.
 
-**[HQ Data Services](https://hqdataservicesllc.com)** was built to bring AI-powered automation to organizations that need it — helping teams eliminate the manual work that slows them down and surfaces the insights that move them forward.
-
 **[ScholarDollarz](https://scholardollarz.com)** was built for students. The scholarship search process is broken — full of dead links, outdated data, and databases that don't actually match students to opportunities they qualify for. ScholarDollarz uses AI verification, intelligent filtering, and 4,600+ researched scholarships to fix that.
 
 Both businesses share the same core belief: that access to intelligent systems shouldn't depend on the size of your budget or your organization.
