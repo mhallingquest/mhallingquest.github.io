@@ -1,6 +1,6 @@
 ---
 layout: single
-title: AI Automation Engineer
+title: Data Anayst and Automation Engineer
 classes: wide
 author_profile: true
 ---
