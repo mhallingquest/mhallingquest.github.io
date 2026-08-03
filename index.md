@@ -21,6 +21,11 @@ End-to-end pipelines from raw data to production dashboards — SQL, Python, Pow
 
 `SQL` `Python` `Power BI` `Tableau`
 
+### Machine Learning
+Predictive models trained on real historical data, validated against real-world outcomes.
+
+`Python` `scikit-learn` `XGBoost` `Feature Engineering`
+
 ### Document Intelligence
 LLM-powered extraction, validation, and routing for contracts, invoices, and forms.
 
@@ -41,6 +46,7 @@ Multi-step agents that call tools/APIs to classify, summarize, draft, and execut
 | [Superstore Sales Dashboard](/projects/#superstore-sales-dashboard) | Discount vs. margin analysis — **live Power BI dashboard** |
 | [FEC Campaign Finance Dashboard](/projects/#fec-campaign-finance-dashboard) | Live 2026 election cycle data — **live Power BI dashboard** |
 | [NBA Team Stats Dashboard](/projects/#nba-team-stats-dashboard) | 14 seasons of shooting trends — **live Power BI dashboard** |
+| [March Madness ML](/projects/#march-madness-ml) | 2025 bracket predicted blind, scored **12/14 vs. real results** |
 | [Contract Processing Bot](/projects/#contract-processing-bot) | **–80% time** to process vendor contracts with AI validation loops |
 | [Support Email Agent](/projects/#support-email-agent) | **24/7 response** to support emails with human-in-the-loop approvals |
 | [Meeting Intelligence Agent](/projects/#meeting-intelligence-agent) | **–85% time** spent on meeting write-up and follow-up |
@@ -64,6 +70,10 @@ Live 2026 federal election cycle fundraising data, revealing the incumbency adva
 ### 🏀 [NBA Team Stats Dashboard](/projects/#nba-team-stats-dashboard)
 Fourteen seasons of NBA team data revealing the three-point revolution and team performance trends from 2010-2024.
 `BigQuery` `dbt` `Power BI`
+
+### 🎯 [March Madness ML](/projects/#march-madness-ml)
+Predicted the 2025 NCAA bracket blind, then scored it against real results — 12/14 correct including a perfect Women's bracket.
+`Python` `scikit-learn` `XGBoost`
 
 ### 🤖 [Contract Processing Bot](/projects/#contract-processing-bot)
 NLP extraction + policy checks + approval workflow. Built on Zapier + OpenAI + Google Drive.
