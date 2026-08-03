@@ -1,13 +1,13 @@
 ---
 layout: single
-title: Data Anayst and Automation Engineer
+title: Data Analyst and Automation Engineer
 classes: wide
 author_profile: true
 ---
 
 # AI Automation that Delivers ROI
 
-I design and ship intelligent workflows that reduce manual work, speed up decisions, and create leverage across healthcare, education, sales, media, and banking.
+I design and ship intelligent workflows that reduce manual work, speed up decisions, and create leverage across healthcare, education, sales, media, and finance and banking.
 
 [View Projects](/projects/){: .btn .btn--primary}
 [About Me](/pages/about.md/){: .btn .btn--inverse}
