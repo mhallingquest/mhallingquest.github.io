@@ -238,7 +238,7 @@ flowchart LR
     <iframe
       title="2026 Congressional Campaign Finance Dashboard"
       style="position:absolute; top:0; left:0; width:100%; height:100%;"
-      src="https://app.powerbi.com/view?r=eyJrIjoiMDE4ZjE1MTktMTBkNi00NDhlLThkOTctZTkzMTI2ZDJmNDBiIiwidCI6IjQyNmVjMmY0LTM5YTgtNGE2ZS1iZmI5LTRlMDE5OGJkYTg2NyIsImMiOjF9"
+      src="https://app.powerbi.com/view?r=eyJrIjoiMDE4ZjE1MTktMTBkNi00NDhlLThkOTctZTkzMTI2ZDJmNDBiIiwidCI6IjQyNmVjMmY0LTM5YTgtNGE2ZS1iZmI5LTRlMDE5OGJkYTg2NyIsImMiOjF9&pageName=5c472640cd1d16085601"
       frameborder="0"
       allowFullScreen="true">
     </iframe>
