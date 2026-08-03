@@ -38,6 +38,7 @@ Multi-step agents that call tools/APIs to classify, summarize, draft, and execut
 | Project | Result |
 |---------|--------|
 | [Medicare Data Pipeline](/projects/#medicare-data-pipeline) | Raw CMS data → BigQuery → dbt → **live Power BI dashboard** |
+| [Superstore Sales Dashboard](/projects/#superstore-sales-dashboard) | Discount vs. margin analysis — **live Power BI dashboard** |
 | [Contract Processing Bot](/projects/#contract-processing-bot) | **–80% time** to process vendor contracts with AI validation loops |
 | [Support Email Agent](/projects/#support-email-agent) | **24/7 response** to support emails with human-in-the-loop approvals |
 | [Meeting Intelligence Agent](/projects/#meeting-intelligence-agent) | **–85% time** spent on meeting write-up and follow-up |
@@ -49,6 +50,10 @@ Multi-step agents that call tools/APIs to classify, summarize, draft, and execut
 ### 📊 [Medicare Data Pipeline](/projects/#medicare-data-pipeline)
 Raw CMS Medicare data landed in BigQuery, modeled with dbt, served through a live Power BI dashboard.
 `BigQuery` `dbt` `Power BI` `Cloud Storage`
+
+### 📈 [Superstore Sales Dashboard](/projects/#superstore-sales-dashboard)
+Sales and profitability pipeline revealing how discounting erodes margin across categories and regions.
+`BigQuery` `dbt` `Power BI`
 
 ### 🤖 [Contract Processing Bot](/projects/#contract-processing-bot)
 NLP extraction + policy checks + approval workflow. Built on Zapier + OpenAI + Google Drive.
