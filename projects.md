@@ -5,8 +5,8 @@ permalink: /projects/
 classes: wide
 ---
 
-# 🧠 AI Automation Projects
-A collection of automation builds combining **Zapier**, **OpenAI**, and clean orchestration to remove manual work and improve accuracy.
+# 🧠 AI Automation & Data Engineering Projects
+A collection of builds spanning two disciplines: **AI-powered automation** — LLM-driven document processing, agentic workflows, and human-in-the-loop approval systems — and **end-to-end data engineering**, carrying raw data from source through BigQuery and dbt to live production dashboards in Power BI.
 
 ---
 
@@ -239,6 +239,80 @@ flowchart LR
       title="2026 Congressional Campaign Finance Dashboard"
       style="position:absolute; top:0; left:0; width:100%; height:100%;"
       src="https://app.powerbi.com/view?r=eyJrIjoiMDE4ZjE1MTktMTBkNi00NDhlLThkOTctZTkzMTI2ZDJmNDBiIiwidCI6IjQyNmVjMmY0LTM5YTgtNGE2ZS1iZmI5LTRlMDE5OGJkYTg2NyIsImMiOjF9&pageName=5c472640cd1d16085601"
+      frameborder="0"
+      allowFullScreen="true">
+    </iframe>
+  </div>
+</div>
+
+---
+
+## 🏀 NBA Team Performance & Shooting Trends {#nba-team-stats-dashboard}
+**Type:** Data Engineering / Cloud Data Pipeline
+**Stack:** BigQuery, dbt, Power BI
+**Code:** [View on GitHub](https://github.com/mhallingquest/data-analytics/tree/main/nba-team-stats-pipeline)
+
+A pipeline built on real NBA team game data spanning 2010-2024 — fourteen
+regular seasons carried from a public, actively-maintained GitHub dataset
+through to a live production dashboard, tracking the sport's most
+significant modern tactical shift: the rise of the three-point shot.
+
+**Highlights**
+- Built against a fully-documented public schema, verified directly against the source repo before writing any SQL
+- League-wide shooting trends reveal the well-documented "3-point revolution" — average 3-point attempts per team climbing steadily across the full 2010-2024 span
+- Team-level win percentage, scoring, and point differential tracked season over season, filterable by team
+- `PLUS_MINUS` used directly for point differential, avoiding an unnecessary self-join against opponent data
+
+### 🧩 Workflow Diagram
+
+### 🏀 NBA Team Stats Pipeline — Diagram
+
+```mermaid
+%%{init: {'flowchart': { 'htmlLabels': true, 'wrap': true, 'nodeSpacing': 60, 'rankSpacing': 80 }}}%%
+flowchart LR
+  subgraph Ingest [📥 Ingest]
+    A1["(1) GitHub<br/>regular_season_totals_2010_2024.csv"]
+    A2["(2) BigQuery<br/>direct upload, no GCS needed"]
+    A1 --> A2
+  end
+
+  subgraph Transform [🧱 dbt Transform]
+    A2 --> B1["(3) Staging model<br/>clean, rename, type-cast"]
+    B1 --> C1["(4) Mart: team season summary<br/>win %, scoring, shooting efficiency"]
+    B1 --> C2["(5) Mart: league shooting trends<br/>3-point attempts by season"]
+    C1 --> D1["(6) dbt test<br/>not_null / unique checks"]
+    C2 --> D1
+  end
+
+  subgraph Serve [📈 Serve]
+    D1 --> E1["(7) Power BI<br/>connects to BigQuery marts"]
+    E1 --> E2["(8) Publish to web<br/>live embedded dashboard"]
+  end
+
+```
+
+**Workflow Steps**
+
+1. **Source:** Download "regular_season_totals_2010_2024.csv" from the publicly maintained NocturneBear/NBA-Data-2010-2024 GitHub repository
+2. **Load:** Direct upload into BigQuery — no Cloud Storage step needed at this file size
+3. **Stage:** dbt staging model cleans column names and casts types against the source's own documented schema
+4. **Model (team season):** dbt mart aggregates wins, losses, win percentage, scoring, and shooting efficiency by team and season
+5. **Model (league trends):** dbt mart aggregates league-wide shooting and scoring averages by season, surfacing the 3-point attempt trend
+6. **Test:** dbt's test framework enforces not_null/unique constraints before the marts are trusted downstream
+7. **Connect:** Power BI connects directly to the BigQuery production marts
+8. **Publish:** Power BI's "Publish to web" generates a live, filterable embed for the portfolio site
+
+<div id="nba-demo" style="border:1px solid #444; border-radius:10px; padding:1.25rem; margin:1.5rem 0; background:rgba(255,255,255,0.03);">
+  <p style="margin-top:0; font-weight:600;">🎬 Try it live</p>
+  <p style="font-size:0.9rem; opacity:0.85;">
+    The actual production Power BI dashboard, built on the pipeline above —
+    filter by team and explore fourteen seasons of shooting trends directly.
+  </p>
+  <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:6px; border:1px solid #555;">
+    <iframe
+      title="NBA Team Performance & Shooting Trends"
+      style="position:absolute; top:0; left:0; width:100%; height:100%;"
+      src="https://app.powerbi.com/view?r=eyJrIjoiN2Q1Zjc5NjAtOGM2NS00MjAwLTk4ZWEtMjYzMmExM2RjYjlhIiwidCI6IjQyNmVjMmY0LTM5YTgtNGE2ZS1iZmI5LTRlMDE5OGJkYTg2NyIsImMiOjF9"
       frameborder="0"
       allowFullScreen="true">
     </iframe>
