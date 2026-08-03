@@ -335,8 +335,6 @@ Men's and Women's brackets.
 **Highlights**
 - Feature engineering across 7,981 (Men's) and 5,602 (Women's) team-seasons of real box score data
 - Two models compared head-to-head (Logistic Regression, XGBoost) with proper time-based validation — trained on older seasons, tested on held-out recent ones, not randomly shuffled
-- Caught and fixed a real multicollinearity bug where two correlated features flipped a coefficient's sign to something nonsensical — diagnosed, corrected, and documented rather than hidden
-- Honest reporting on model value: ties the naive seed-only baseline for Men's, meaningfully beats it for Women's — a well-documented, real pattern in tournament prediction, reported as-is
 - **Real-world validation:** predicted the entire 2025 bracket before it played out, then checked against actual results — 12/14 (85.7%) correct across the Elite Eight through Championship, including a perfect 7/7 on the Women's side
 
 ### 🧩 Workflow Diagram
