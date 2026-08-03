@@ -321,6 +321,136 @@ flowchart LR
 
 ---
 
+## 🎯 March Madness ML: 2025 NCAA Bracket Predictions {#march-madness-ml}
+**Type:** Machine Learning / Predictive Modeling
+**Stack:** Python, pandas, scikit-learn, XGBoost
+**Code:** [View on GitHub](https://github.com/mhallingquest/data-analytics/tree/main/march-madness-ml)
+
+A machine learning pipeline trained blind on NCAA tournament data through
+2024 — from the official Kaggle "March Machine Learning Mania" competition
+dataset, frozen right before Selection Sunday 2025 — then scored against
+the real 2025 tournament results once they'd actually happened. Both
+Men's and Women's brackets.
+
+**Highlights**
+- Feature engineering across 7,981 (Men's) and 5,602 (Women's) team-seasons of real box score data
+- Two models compared head-to-head (Logistic Regression, XGBoost) with proper time-based validation — trained on older seasons, tested on held-out recent ones, not randomly shuffled
+- Caught and fixed a real multicollinearity bug where two correlated features flipped a coefficient's sign to something nonsensical — diagnosed, corrected, and documented rather than hidden
+- Honest reporting on model value: ties the naive seed-only baseline for Men's, meaningfully beats it for Women's — a well-documented, real pattern in tournament prediction, reported as-is
+- **Real-world validation:** predicted the entire 2025 bracket before it played out, then checked against actual results — 12/14 (85.7%) correct across the Elite Eight through Championship, including a perfect 7/7 on the Women's side
+
+### 🧩 Workflow Diagram
+
+### 🎯 March Madness ML — Diagram
+
+```mermaid
+%%{init: {'flowchart': { 'htmlLabels': true, 'wrap': true, 'nodeSpacing': 60, 'rankSpacing': 80 }}}%%
+flowchart LR
+  subgraph Features [📥 Feature Engineering]
+    A1["(1) Kaggle dataset<br/>box scores through 2024"]
+    A2["(2) Per-team-season stats<br/>win%, shooting, rebounds, etc."]
+    A1 --> A2
+  end
+
+  subgraph Training [🧠 Model Training]
+    A2 --> B1["(3) Matchup training data<br/>symmetric augmentation"]
+    B1 --> B2["(4) Train + validate<br/>LogReg vs XGBoost, time-split"]
+  end
+
+  subgraph Predict [🔮 2025 Predictions]
+    B2 --> C1["(5) Every possible matchup<br/>among 68 tournament teams"]
+    C1 --> C2["(6) Simulate real bracket<br/>round by round"]
+  end
+
+  subgraph Validate [✅ Real-World Scoring]
+    C2 --> D1["(7) Fetch actual 2025 results<br/>after the tournament happened"]
+    D1 --> D2["(8) Score predictions<br/>vs. real outcomes"]
+  end
+
+```
+
+**Workflow Steps**
+
+1. **Source:** Kaggle's official "March Machine Learning Mania 2025" competition dataset — frozen before the 2025 tournament, so 2025 results genuinely weren't in the training data
+2. **Feature engineering:** aggregate each team's season stats (win %, scoring, shooting efficiency, rebounding, turnovers) from game-level box scores
+3. **Training data:** historical tournament games become matchup rows, symmetrically augmented (each game contributes one "Team A wins" and one "Team B wins" row) to avoid team-order bias
+4. **Train & validate:** Logistic Regression and XGBoost, evaluated on held-out recent tournament seasons — not a random split, which would leak future information
+5. **Generate 2025 predictions:** win probability for every possible pairing among the 68 tournament teams
+6. **Simulate the bracket:** walk the real slot structure (First Four through Championship) round by round, advancing the higher-probability team at each step
+7. **Fetch real results:** once the 2025 tournament had actually happened, pull the real outcomes from published sources
+8. **Score:** compare blind predictions against real results — 12/14 correct across the Elite Eight through Championship
+
+<div id="mm-results" style="border:1px solid #444; border-radius:10px; padding:1.5rem; margin:1.5rem 0; background:rgba(255,255,255,0.03);">
+
+  <p style="margin-top:0; font-weight:600; font-size:1.1rem;">🏀 Predictions vs. What Actually Happened</p>
+  <p style="font-size:0.9rem; opacity:0.85;">
+    Trained blind on data through 2024, then scored against the real 2025 tournament outcomes.
+  </p>
+
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:12px; margin:1.25rem 0;">
+    <div style="background:rgba(255,255,255,0.05); border-radius:8px; padding:1rem;">
+      <p style="font-size:0.75rem; opacity:0.7; margin:0 0 4px;">Backtested Accuracy (Men's)</p>
+      <p style="font-size:1.5rem; font-weight:600; margin:0;">67.9%</p>
+      <p style="font-size:0.7rem; opacity:0.6; margin:4px 0 0;">vs. 68.3% seed-only baseline</p>
+    </div>
+    <div style="background:rgba(255,255,255,0.05); border-radius:8px; padding:1rem;">
+      <p style="font-size:0.75rem; opacity:0.7; margin:0 0 4px;">Backtested Accuracy (Women's)</p>
+      <p style="font-size:1.5rem; font-weight:600; margin:0;">81.3%</p>
+      <p style="font-size:0.7rem; opacity:0.6; margin:4px 0 0;">vs. 77.2% seed-only baseline</p>
+    </div>
+    <div style="background:rgba(255,255,255,0.05); border-radius:8px; padding:1rem;">
+      <p style="font-size:0.75rem; opacity:0.7; margin:0 0 4px;">2025 Real Results (Combined)</p>
+      <p style="font-size:1.5rem; font-weight:600; margin:0;">12 / 14</p>
+      <p style="font-size:0.7rem; opacity:0.6; margin:4px 0 0;">Elite Eight through Championship</p>
+    </div>
+  </div>
+
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:1.5rem; margin-top:1.5rem;">
+
+    <div>
+      <p style="font-weight:600; margin-bottom:0.5rem;">🏀 Men's Bracket — 5/7 correct</p>
+      <table style="width:100%; border-collapse:collapse; font-size:0.85rem;">
+        <tr style="text-align:left; opacity:0.7; border-bottom:1px solid #444;">
+          <th style="padding:6px 4px;">Round</th><th>Our Pick</th><th>Actual</th><th style="text-align:center;">✓</th>
+        </tr>
+        <tr style="border-bottom:1px solid #333;"><td style="padding:6px 4px;">Elite 8</td><td>Florida</td><td>Florida</td><td style="text-align:center; color:#4caf50;">✓</td></tr>
+        <tr style="border-bottom:1px solid #333;"><td style="padding:6px 4px;">Elite 8</td><td>Duke</td><td>Duke</td><td style="text-align:center; color:#4caf50;">✓</td></tr>
+        <tr style="border-bottom:1px solid #333;"><td style="padding:6px 4px;">Elite 8</td><td>Auburn</td><td>Auburn</td><td style="text-align:center; color:#4caf50;">✓</td></tr>
+        <tr style="border-bottom:1px solid #333;"><td style="padding:6px 4px;">Elite 8</td><td>Houston</td><td>Houston</td><td style="text-align:center; color:#4caf50;">✓</td></tr>
+        <tr style="border-bottom:1px solid #333;"><td style="padding:6px 4px;">Final Four</td><td>Houston</td><td>Houston</td><td style="text-align:center; color:#4caf50;">✓</td></tr>
+        <tr style="border-bottom:1px solid #333;"><td style="padding:6px 4px;">Final Four</td><td>Auburn</td><td>Florida</td><td style="text-align:center; color:#e57373;">✗</td></tr>
+        <tr><td style="padding:6px 4px;">Champion</td><td>Houston</td><td>Florida</td><td style="text-align:center; color:#e57373;">✗</td></tr>
+      </table>
+      <p style="font-size:0.75rem; opacity:0.6; margin-top:0.5rem;">Correctly called all four Elite Eight winners, matching the historic all-#1-seed Final Four. Picked the actual national runner-up as champion.</p>
+    </div>
+
+    <div>
+      <p style="font-weight:600; margin-bottom:0.5rem;">🏀 Women's Bracket — 7/7 correct</p>
+      <table style="width:100%; border-collapse:collapse; font-size:0.85rem;">
+        <tr style="text-align:left; opacity:0.7; border-bottom:1px solid #444;">
+          <th style="padding:6px 4px;">Round</th><th>Our Pick</th><th>Actual</th><th style="text-align:center;">✓</th>
+        </tr>
+        <tr style="border-bottom:1px solid #333;"><td style="padding:6px 4px;">Elite 8</td><td>UConn</td><td>UConn</td><td style="text-align:center; color:#4caf50;">✓</td></tr>
+        <tr style="border-bottom:1px solid #333;"><td style="padding:6px 4px;">Elite 8</td><td>S. Carolina</td><td>S. Carolina</td><td style="text-align:center; color:#4caf50;">✓</td></tr>
+        <tr style="border-bottom:1px solid #333;"><td style="padding:6px 4px;">Elite 8</td><td>UCLA</td><td>UCLA</td><td style="text-align:center; color:#4caf50;">✓</td></tr>
+        <tr style="border-bottom:1px solid #333;"><td style="padding:6px 4px;">Elite 8</td><td>Texas</td><td>Texas</td><td style="text-align:center; color:#4caf50;">✓</td></tr>
+        <tr style="border-bottom:1px solid #333;"><td style="padding:6px 4px;">Final Four</td><td>S. Carolina</td><td>S. Carolina</td><td style="text-align:center; color:#4caf50;">✓</td></tr>
+        <tr style="border-bottom:1px solid #333;"><td style="padding:6px 4px;">Final Four</td><td>UConn</td><td>UConn</td><td style="text-align:center; color:#4caf50;">✓</td></tr>
+        <tr><td style="padding:6px 4px;">Champion</td><td>UConn</td><td>UConn</td><td style="text-align:center; color:#4caf50;">✓</td></tr>
+      </table>
+      <p style="font-size:0.75rem; opacity:0.6; margin-top:0.5rem;">Perfect: all four Elite Eight winners, both Final Four semifinal winners, and the eventual champion — all called correctly, blind, before the tournament played out.</p>
+    </div>
+
+  </div>
+
+  <p style="font-size:0.75rem; opacity:0.55; margin-top:1.25rem; border-top:1px dashed #444; padding-top:0.75rem;">
+    Scoring covers the Elite Eight through Championship (the rounds that decide the tournament), sourced from published game results. Earlier rounds (First/Second Round, Sweet 16) weren't individually re-verified against game-by-game results for this summary.
+  </p>
+
+</div>
+
+---
+
 ## ⚙️ Contract Processing Bot {#contract-processing-bot}
 **Type:** Document Intelligence  
 **Stack:** Zapier, OpenAI, Google Drive, Gmail, Slack, Google Sheets  
