@@ -93,6 +93,84 @@ flowchart LR
     </iframe>
   </div>
 </div>
+## 📈 Superstore Sales & Profitability Dashboard {#superstore-sales-dashboard}
+**Type:** Data Engineering / Cloud Data Pipeline
+**Stack:** BigQuery, dbt, Power BI
+**Code:** [View on GitHub](https://github.com/mhallingquest/data-analytics/tree/main/superstore-sales-pipeline)
+
+A complete, working pipeline built on the Sample Superstore dataset — sales,
+profit, and discount data across product categories, regions, and customer
+segments — carried from a raw CSV straight through to a live production
+dashboard. Deliberately chosen after an earlier attempt (GA4 e-commerce
+data) turned out to have deliberately-stripped pricing fields — this
+dataset is complete by design, letting the analysis focus on the actual
+business question instead of working around missing data.
+
+**Highlights**
+- Direct CSV upload straight into BigQuery — no Cloud Storage step needed at this scale
+- dbt staging layer normalizes raw column names (including literal spaces/hyphens from the source CSV) before any business logic runs
+- Two production marts: category/region profitability, and segment/state performance
+- Reveals a real, visible pattern in the data — heavier discounting correlates with lower profit margin, and it hits some categories far harder than others
+- Grouping logic applied defensively from the start (using `ANY_VALUE()` for descriptive fields rather than a fragile composite key) — a lesson carried over from an earlier project rather than learned the hard way twice
+
+### 🧩 Workflow Diagram
+
+### 📈 Superstore Pipeline — Diagram
+
+```mermaid
+%%{init: {'flowchart': { 'htmlLabels': true, 'wrap': true, 'nodeSpacing': 60, 'rankSpacing': 80 }}}%%
+flowchart LR
+  subgraph Ingest [📥 Ingest]
+    A1["(1) Sample Superstore CSV<br/>direct download"]
+    A2["(2) BigQuery<br/>direct upload, no GCS needed"]
+    A1 --> A2
+  end
+
+  subgraph Transform [🧱 dbt Transform]
+    A2 --> B1["(3) Staging model<br/>clean, rename, type-cast"]
+    B1 --> C1["(4) Mart: category/region<br/>sales, profit, margin, discount"]
+    B1 --> C2["(5) Mart: segment/state<br/>profit by segment + geography"]
+    C1 --> D1["(6) dbt test<br/>not_null / unique checks"]
+    C2 --> D1
+  end
+
+  subgraph Serve [📈 Serve]
+    D1 --> E1["(7) Power BI<br/>connects to BigQuery marts"]
+    E1 --> E2["(8) Publish to web<br/>live embedded dashboard"]
+  end
+
+```
+
+**Workflow Steps**
+
+1. **Source:** Download the Sample Superstore CSV (complete, no missing-by-design fields)
+2. **Load:** Direct upload into BigQuery — small enough to skip Cloud Storage entirely
+3. **Stage:** dbt staging model cleans column names (including literal spaces/hyphens from the raw headers) and casts types
+4. **Model (category/region):** dbt mart aggregates sales, profit, quantity, discount, and margin by category, sub-category, and region
+5. **Model (segment/state):** dbt mart aggregates the same metrics by customer segment and state
+6. **Test:** dbt's test framework enforces not_null/unique constraints before the marts are trusted downstream
+7. **Connect:** Power BI connects directly to the BigQuery production marts
+8. **Publish:** Power BI's "Publish to web" generates a live, filterable embed for the portfolio site
+
+<div id="superstore-demo" style="border:1px solid #444; border-radius:10px; padding:1.25rem; margin:1.5rem 0; background:rgba(255,255,255,0.03);">
+  <p style="margin-top:0; font-weight:600;">🎬 Try it live</p>
+  <p style="font-size:0.9rem; opacity:0.85;">
+    The actual production Power BI dashboard, built on the pipeline above —
+    filter by segment and explore it directly.
+  </p>
+  <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:6px; border:1px solid #555;">
+    <iframe
+      title="Superstore Sales & Profitability Dashboard"
+      style="position:absolute; top:0; left:0; width:100%; height:100%;"
+      src="https://app.powerbi.com/view?r=eyJrIjoiY2NjYmQ5MDYtYWRjNS00ZWM4LWJiNWYtMDBkNWUyMjhiMTI1IiwidCI6IjQyNmVjMmY0LTM5YTgtNGE2ZS1iZmI5LTRlMDE5OGJkYTg2NyIsImMiOjF9"
+      frameborder="0"
+      allowFullScreen="true">
+    </iframe>
+  </div>
+</div>
+
+---
+
 ## ⚙️ Contract Processing Bot {#contract-processing-bot}
 **Type:** Document Intelligence  
 **Stack:** Zapier, OpenAI, Google Drive, Gmail, Slack, Google Sheets  
