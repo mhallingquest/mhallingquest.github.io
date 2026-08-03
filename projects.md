@@ -171,6 +171,82 @@ flowchart LR
 
 ---
 
+## 🗳️ 2026 Congressional Campaign Finance Dashboard {#fec-campaign-finance-dashboard}
+**Type:** Data Engineering / Cloud Data Pipeline
+**Stack:** BigQuery, dbt, Power BI
+**Code:** [View on GitHub](https://github.com/mhallingquest/data-analytics/tree/main/fec-campaign-finance-pipeline)
+
+A pipeline built on genuinely live, current data — real 2025-2026 federal
+election cycle campaign finance filings, downloaded directly from the FEC's
+official bulk data files and carried through to a live production
+dashboard. Unlike the other pipelines in this portfolio, this one tracks an
+active, ongoing dataset that updates as new filings are received, rather
+than a static historical snapshot.
+
+**Highlights**
+- Built against the FEC's exact real column schema, verified directly against the source file before writing any SQL — no guess-and-fix iteration needed
+- Reveals a genuinely contrasting story: House races raise more total dollars, but Senate candidates raise more per-candidate on average — visible side by side in two deliberately paired charts
+- Surfaces the well-documented incumbency advantage clearly: incumbents outraise both open-seat and challenger candidates by a wide margin
+- Party codes normalized at the source layer (e.g., Minnesota's "DFL" folded into "DEM") so downstream charts tell an accurate national story
+
+### 🧩 Workflow Diagram
+
+### 🗳️ FEC Campaign Finance Pipeline — Diagram
+
+```mermaid
+%%{init: {'flowchart': { 'htmlLabels': true, 'wrap': true, 'nodeSpacing': 60, 'rankSpacing': 80 }}}%%
+flowchart LR
+  subgraph Ingest [📥 Ingest]
+    A1["(1) FEC.gov<br/>candidate_summary_2026.csv"]
+    A2["(2) BigQuery<br/>direct upload, no GCS needed"]
+    A1 --> A2
+  end
+
+  subgraph Transform [🧱 dbt Transform]
+    A2 --> B1["(3) Staging model<br/>clean, rename, normalize party codes"]
+    B1 --> C1["(4) Mart: fundraising by party/office<br/>totals + per-candidate averages"]
+    B1 --> C2["(5) Mart: candidate leaderboard<br/>one row per candidate"]
+    C1 --> D1["(6) dbt test<br/>not_null / unique checks"]
+    C2 --> D1
+  end
+
+  subgraph Serve [📈 Serve]
+    D1 --> E1["(7) Power BI<br/>connects to BigQuery marts"]
+    E1 --> E2["(8) Publish to web<br/>live embedded dashboard"]
+  end
+
+```
+
+**Workflow Steps**
+
+1. **Source:** Download the FEC's official "candidate_summary_2026.csv" bulk data file for the 2025-2026 election cycle
+2. **Load:** Direct upload into BigQuery — small enough to skip Cloud Storage entirely
+3. **Stage:** dbt staging model cleans column names, casts types, and normalizes party affiliation codes (e.g., DFL → DEM) and office codes (H/S/P → House/Senate/President)
+4. **Model (fundraising):** dbt mart aggregates receipts, disbursements, and cash-on-hand by party and office, including both totals and per-candidate averages
+5. **Model (leaderboard):** dbt mart produces one row per candidate, grouped defensively by the reliable `candidate_id` field
+6. **Test:** dbt's test framework enforces not_null/unique constraints before the marts are trusted downstream
+7. **Connect:** Power BI connects directly to the BigQuery production marts
+8. **Publish:** Power BI's "Publish to web" generates a live, filterable embed for the portfolio site
+
+<div id="fec-demo" style="border:1px solid #444; border-radius:10px; padding:1.25rem; margin:1.5rem 0; background:rgba(255,255,255,0.03);">
+  <p style="margin-top:0; font-weight:600;">🎬 Try it live</p>
+  <p style="font-size:0.9rem; opacity:0.85;">
+    The actual production Power BI dashboard, built on genuinely live 2026
+    election cycle data — explore it directly.
+  </p>
+  <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:6px; border:1px solid #555;">
+    <iframe
+      title="2026 Congressional Campaign Finance Dashboard"
+      style="position:absolute; top:0; left:0; width:100%; height:100%;"
+      src="https://app.powerbi.com/view?r=eyJrIjoiMDE4ZjE1MTktMTBkNi00NDhlLThkOTctZTkzMTI2ZDJmNDBiIiwidCI6IjQyNmVjMmY0LTM5YTgtNGE2ZS1iZmI5LTRlMDE5OGJkYTg2NyIsImMiOjF9"
+      frameborder="0"
+      allowFullScreen="true">
+    </iframe>
+  </div>
+</div>
+
+---
+
 ## ⚙️ Contract Processing Bot {#contract-processing-bot}
 **Type:** Document Intelligence  
 **Stack:** Zapier, OpenAI, Google Drive, Gmail, Slack, Google Sheets  
