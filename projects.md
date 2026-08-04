@@ -447,6 +447,1333 @@ flowchart LR
 
 </div>
 
+
+<div id="mm-full-bracket" style="border:1px solid #444; border-radius:10px; padding:1.5rem; margin:1.5rem 0; background:rgba(255,255,255,0.03);">
+    <p style="margin-top:0; font-weight:600; font-size:1.1rem;">🎯 Full Predicted Bracket — 2025</p>
+    <p style="font-size:0.85rem; opacity:0.75; margin-bottom:1rem;">
+        Every round, every predicted winner. Green/red borders mark picks
+        verified against real results (Elite Eight through Championship);
+        gray borders are earlier-round predictions not individually
+        re-verified against game-by-game results.
+    </p>
+
+    <button onclick="
+        var c = document.getElementById('mm-bracket-content-2025');
+        var open = c.style.display !== 'none';
+        c.style.display = open ? 'none' : 'block';
+        this.textContent = open ? 'Show Full Bracket ▾' : 'Hide Full Bracket ▴';
+    " style="padding:0.5rem 1.1rem; border-radius:6px; border:1px solid #555; background:rgba(255,255,255,0.06); color:inherit; cursor:pointer; font-weight:600; margin-bottom:1rem;">
+        Show Full Bracket &#9662;
+    </button>
+
+    <div id="mm-bracket-content-2025" style="display:none;">
+        
+    <div style="margin-bottom:2rem;">
+        <p style="font-weight:600; font-size:1rem; margin-bottom:0.75rem;">🏀 Men's Bracket</p>
+        <div style="display:flex; gap:10px; overflow-x:auto; padding-bottom:8px;">
+            
+            <div style="min-width:150px; flex:1;">
+                <p style="font-size:0.8rem; font-weight:600; text-align:center; opacity:0.85; margin-bottom:8px; border-bottom:1px solid #444; padding-bottom:6px;">
+                    First Four
+                </p>
+                
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">American Univ</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Mt St Mary's</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>American Univ</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Texas</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Xavier</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Texas</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">North Carolina</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">San Diego St</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>San Diego St</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Alabama St</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">St Francis PA</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Alabama St</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+            </div>
+            <div style="min-width:150px; flex:1;">
+                <p style="font-size:0.8rem; font-weight:600; text-align:center; opacity:0.85; margin-bottom:8px; border-bottom:1px solid #444; padding-bottom:6px;">
+                    Round of 64
+                </p>
+                
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Duke</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">American Univ</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Duke</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Alabama</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Robert Morris</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Alabama</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Wisconsin</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Montana</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Wisconsin</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Arizona</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Akron</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Arizona</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Oregon</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Liberty</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Oregon</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">BYU</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">VCU</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>VCU</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">St Mary's CA</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Vanderbilt</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>St Mary's CA</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Mississippi St</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Baylor</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Mississippi St</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Houston</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">SIUE</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Houston</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Tennessee</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Wofford</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Tennessee</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Kentucky</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Troy</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Kentucky</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Purdue</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">High Point</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Purdue</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Clemson</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">McNeese St</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Clemson</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Illinois</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Texas</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Illinois</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">UCLA</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Utah St</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>UCLA</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Gonzaga</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Georgia</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Gonzaga</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Auburn</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Alabama St</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Auburn</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Michigan St</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Bryant</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Michigan St</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Iowa St</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Lipscomb</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Iowa St</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Texas A&M</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Yale</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Texas A&M</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Michigan</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">UC San Diego</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>UC San Diego</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Mississippi</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">San Diego St</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Mississippi</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Marquette</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">New Mexico</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Marquette</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Louisville</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Creighton</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Louisville</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Florida</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Norfolk St</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Florida</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">St John's</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">NE Omaha</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>St John's</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Texas Tech</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">UNC Wilmington</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Texas Tech</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Maryland</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Grand Canyon</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Maryland</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Memphis</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Colorado St</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Memphis</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Missouri</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Drake</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Missouri</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Kansas</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Arkansas</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Kansas</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Connecticut</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Oklahoma</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Connecticut</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+            </div>
+            <div style="min-width:150px; flex:1;">
+                <p style="font-size:0.8rem; font-weight:600; text-align:center; opacity:0.85; margin-bottom:8px; border-bottom:1px solid #444; padding-bottom:6px;">
+                    Round of 32
+                </p>
+                
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Duke</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Mississippi St</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Duke</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Alabama</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">St Mary's CA</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Alabama</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Wisconsin</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">VCU</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Wisconsin</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Arizona</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Oregon</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Arizona</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Houston</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Gonzaga</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Houston</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Tennessee</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">UCLA</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Tennessee</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Kentucky</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Illinois</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Kentucky</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Purdue</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Clemson</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Clemson</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Auburn</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Louisville</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Auburn</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Michigan St</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Marquette</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Michigan St</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Iowa St</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Mississippi</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Iowa St</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Texas A&M</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">UC San Diego</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Texas A&M</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Florida</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Connecticut</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Florida</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">St John's</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Kansas</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>St John's</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Texas Tech</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Missouri</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Texas Tech</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Maryland</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Memphis</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Maryland</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+            </div>
+            <div style="min-width:150px; flex:1;">
+                <p style="font-size:0.8rem; font-weight:600; text-align:center; opacity:0.85; margin-bottom:8px; border-bottom:1px solid #444; padding-bottom:6px;">
+                    Sweet 16
+                </p>
+                
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Duke</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Arizona</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Duke</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Alabama</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Wisconsin</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Wisconsin</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Houston</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Clemson</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Houston</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Tennessee</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Kentucky</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Tennessee</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Auburn</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Texas A&M</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Auburn</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Michigan St</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Iowa St</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Iowa St</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Florida</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Maryland</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Florida</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">St John's</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Texas Tech</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>St John's</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+            </div>
+            <div style="min-width:150px; flex:1;">
+                <p style="font-size:0.8rem; font-weight:600; text-align:center; opacity:0.85; margin-bottom:8px; border-bottom:1px solid #444; padding-bottom:6px;">
+                    Elite Eight
+                </p>
+                
+                <div style="border-left:3px solid #4caf50; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Duke</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Wisconsin</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Duke</span>
+                        <span style="color:#4caf50;">✓</span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #4caf50; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Houston</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Tennessee</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Houston</span>
+                        <span style="color:#4caf50;">✓</span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #4caf50; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Auburn</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Iowa St</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Auburn</span>
+                        <span style="color:#4caf50;">✓</span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #4caf50; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Florida</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">St John's</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Florida</span>
+                        <span style="color:#4caf50;">✓</span>
+                    </div>
+                </div>
+            </div>
+            <div style="min-width:150px; flex:1;">
+                <p style="font-size:0.8rem; font-weight:600; text-align:center; opacity:0.85; margin-bottom:8px; border-bottom:1px solid #444; padding-bottom:6px;">
+                    Final Four
+                </p>
+                
+                <div style="border-left:3px solid #4caf50; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Duke</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Houston</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Houston</span>
+                        <span style="color:#4caf50;">✓</span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #e57373; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Auburn</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Florida</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Auburn</span>
+                        <span style="color:#e57373;">✗</span>
+                    </div>
+                </div>
+            </div>
+            <div style="min-width:150px; flex:1;">
+                <p style="font-size:0.8rem; font-weight:600; text-align:center; opacity:0.85; margin-bottom:8px; border-bottom:1px solid #444; padding-bottom:6px;">
+                    Championship
+                </p>
+                
+                <div style="border-left:3px solid #e57373; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Houston</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Auburn</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Houston</span>
+                        <span style="color:#e57373;">✗</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div style="margin-bottom:2rem;">
+        <p style="font-weight:600; font-size:1rem; margin-bottom:0.75rem;">🏀 Women's Bracket</p>
+        <div style="display:flex; gap:10px; overflow-x:auto; padding-bottom:8px;">
+            
+            <div style="min-width:150px; flex:1;">
+                <p style="font-size:0.8rem; font-weight:600; text-align:center; opacity:0.85; margin-bottom:8px; border-bottom:1px solid #444; padding-bottom:6px;">
+                    First Four
+                </p>
+                
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Columbia</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Washington</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Columbia</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Iowa St</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Princeton</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Iowa St</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">High Point</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">William & Mary</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>High Point</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Southern Univ</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">UC San Diego</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>UC San Diego</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+            </div>
+            <div style="min-width:150px; flex:1;">
+                <p style="font-size:0.8rem; font-weight:600; text-align:center; opacity:0.85; margin-bottom:8px; border-bottom:1px solid #444; padding-bottom:6px;">
+                    Round of 64
+                </p>
+                
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">South Carolina</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Tennessee Tech</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>South Carolina</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Duke</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Lehigh</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Duke</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">North Carolina</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Oregon St</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>North Carolina</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Maryland</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Norfolk St</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Maryland</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Alabama</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">WI Green Bay</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Alabama</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">West Virginia</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Columbia</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>West Virginia</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Vanderbilt</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Oregon</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Vanderbilt</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Utah</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Indiana</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Utah</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Texas</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">High Point</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Texas</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">TCU</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">F Dickinson</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>TCU</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Notre Dame</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">SF Austin</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Notre Dame</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Ohio St</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Montana St</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Ohio St</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Tennessee</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">South Florida</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Tennessee</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Michigan</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Iowa St</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Michigan</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Louisville</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Nebraska</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Louisville</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Illinois</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Creighton</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Creighton</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">UCLA</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">UC San Diego</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>UCLA</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">NC State</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Vermont</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>NC State</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">LSU</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">San Diego St</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>LSU</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Baylor</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Grand Canyon</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Baylor</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Mississippi</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Ball St</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Mississippi</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Florida St</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">George Mason</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Florida St</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Michigan St</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Harvard</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Michigan St</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Richmond</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Georgia Tech</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Richmond</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">USC</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">UNC Greensboro</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>USC</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Connecticut</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Arkansas St</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Connecticut</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Oklahoma</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">FGCU</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Oklahoma</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Kentucky</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Liberty</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Kentucky</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Kansas St</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Fairfield</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Kansas St</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Iowa</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Murray St</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Iowa</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Oklahoma St</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">S Dakota St</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Oklahoma St</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">California</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Mississippi St</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Mississippi St</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+            </div>
+            <div style="min-width:150px; flex:1;">
+                <p style="font-size:0.8rem; font-weight:600; text-align:center; opacity:0.85; margin-bottom:8px; border-bottom:1px solid #444; padding-bottom:6px;">
+                    Round of 32
+                </p>
+                
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">South Carolina</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Utah</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>South Carolina</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Duke</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Vanderbilt</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Duke</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">North Carolina</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">West Virginia</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>North Carolina</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Maryland</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Alabama</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Alabama</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Texas</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Creighton</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Texas</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">TCU</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Louisville</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>TCU</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Notre Dame</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Michigan</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Notre Dame</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Ohio St</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Tennessee</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Ohio St</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">UCLA</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Richmond</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>UCLA</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">NC State</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Michigan St</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>NC State</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">LSU</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Florida St</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>LSU</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Baylor</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Mississippi</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Baylor</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">USC</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Mississippi St</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>USC</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Connecticut</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Oklahoma St</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Connecticut</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Oklahoma</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Iowa</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Oklahoma</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Kentucky</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Kansas St</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Kansas St</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+            </div>
+            <div style="min-width:150px; flex:1;">
+                <p style="font-size:0.8rem; font-weight:600; text-align:center; opacity:0.85; margin-bottom:8px; border-bottom:1px solid #444; padding-bottom:6px;">
+                    Sweet 16
+                </p>
+                
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">South Carolina</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Alabama</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>South Carolina</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Duke</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">North Carolina</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Duke</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Texas</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Ohio St</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Texas</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">TCU</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Notre Dame</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>TCU</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">UCLA</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Baylor</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>UCLA</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">NC State</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">LSU</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>LSU</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">USC</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Kansas St</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>USC</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #555; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Connecticut</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Oklahoma</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Connecticut</span>
+                        <span style="color:transparent;"></span>
+                    </div>
+                </div>
+            </div>
+            <div style="min-width:150px; flex:1;">
+                <p style="font-size:0.8rem; font-weight:600; text-align:center; opacity:0.85; margin-bottom:8px; border-bottom:1px solid #444; padding-bottom:6px;">
+                    Elite Eight
+                </p>
+                
+                <div style="border-left:3px solid #4caf50; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">South Carolina</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Duke</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>South Carolina</span>
+                        <span style="color:#4caf50;">✓</span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #4caf50; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">Texas</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">TCU</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Texas</span>
+                        <span style="color:#4caf50;">✓</span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #4caf50; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">UCLA</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">LSU</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>UCLA</span>
+                        <span style="color:#4caf50;">✓</span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #4caf50; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">USC</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Connecticut</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Connecticut</span>
+                        <span style="color:#4caf50;">✓</span>
+                    </div>
+                </div>
+            </div>
+            <div style="min-width:150px; flex:1;">
+                <p style="font-size:0.8rem; font-weight:600; text-align:center; opacity:0.85; margin-bottom:8px; border-bottom:1px solid #444; padding-bottom:6px;">
+                    Final Four
+                </p>
+                
+                <div style="border-left:3px solid #4caf50; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">South Carolina</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Texas</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>South Carolina</span>
+                        <span style="color:#4caf50;">✓</span>
+                    </div>
+                </div>
+                <div style="border-left:3px solid #4caf50; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">UCLA</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Connecticut</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Connecticut</span>
+                        <span style="color:#4caf50;">✓</span>
+                    </div>
+                </div>
+            </div>
+            <div style="min-width:150px; flex:1;">
+                <p style="font-size:0.8rem; font-weight:600; text-align:center; opacity:0.85; margin-bottom:8px; border-bottom:1px solid #444; padding-bottom:6px;">
+                    Championship
+                </p>
+                
+                <div style="border-left:3px solid #4caf50; background:rgba(255,255,255,0.04); border-radius:4px; padding:6px 8px; margin-bottom:6px; font-size:0.72rem;">
+                    <div style="opacity:0.6;">South Carolina</div>
+                    <div style="opacity:0.6;">vs</div>
+                    <div style="opacity:0.6;">Connecticut</div>
+                    <div style="font-weight:600; margin-top:3px; display:flex; justify-content:space-between; align-items:center;">
+                        <span>Connecticut</span>
+                        <span style="color:#4caf50;">✓</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
 ---
 
 ## ⚙️ Contract Processing Bot {#contract-processing-bot}
