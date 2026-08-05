@@ -7,6 +7,13 @@ location: "Remote/Atlanta"
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "dark"  # "default", "air", "contrast", "dark", "mint"
 
+# Analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-RY0EYLPQNJ"
+    anonymize_ip: true
+
 # Build settings
 markdown: kramdown
 kramdown:
